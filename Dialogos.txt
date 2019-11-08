@@ -1,0 +1,79 @@
+// Saudações
+saudacao - Olá
+saudacao - Ola
+saudacao - oi
+saudacao - oiii
+saudacao - oie
+saudacao - bom dia
+saudacao - boa noite
+saudacao - boa tarde
+saudacao - fala
+saudacao - fala chefe
+// Fim Saudações
+
+// Informações
+info - estão abertos
+info - estao abertos
+info - ta aberto
+info - tá aberto
+info - tá atendendo
+info - ta atendento
+info - que horas abre 
+info - que horas fecha
+info - voce entrega
+// Fim Informações
+
+// Cardápio
+cardapio - tem cardápio
+cardapio - deixa eu ver o cardapio
+cardapio - me mostra o cardapio
+cardapio - o que voce tem
+cardapio - o que tem pra vender
+cardapio - trabalha com que
+cardapio - o que ta vendendo
+cardapio - gostaria de ver o cardapio
+// Fim Cardápio
+
+// Conta
+conta - quanto fica
+conta - qual o valor
+conta - quanto dá
+conta - fica quanto no total
+// Fim Conta
+
+// Pedido
+pedido - quero pedir um sobá
+pedido - manda um sobá
+pedido - quero um sobá médio bovino e uma coca
+pedido - um sobá m de frango, um g bovino e um p de frango com duas cocas e uma fanta
+pedido - vê uma água com gás
+pedido - quero um sobá grande com adicional de cebolinha
+pedido - um sobá grande de frango
+pedido - sobá pequeno bovino com adicional de gengibre e omelete
+pedido - quero um soba p bovino com omelete
+pedido - entrega um soba com adicional de gengibre
+pedido - quero um sobá
+pedido - quero soba
+pedido - ve um soba
+pedido - um soba com mais shoyu e frango
+pedido - uma coca
+pedido - uma fanta
+pedido - um refri
+pedido - um refrigerante
+pedido - refri lata
+pedido - lata
+pedido - fanta
+pedido - coca
+pedido - coca cola
+pedido - coca-cola
+pedido - fanta laranja
+pedido - coca lata
+pedido - fanta lata
+pedido - soba
+pedido - sobá pequeno
+pedido - sobá grande
+pedido - sobá médio
+pedido - sobá m
+pedido - sobá g
+pedido - sobá p
+// Fim Pedido
