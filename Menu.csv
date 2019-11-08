@@ -1,0 +1,12 @@
+adicionais, gengibre, shoyu, bovino, cebolinha, frango, omelete
+valorAdicionais, 1.5, 1.5, 10.0, 3.0, 8.0, 3.0
+bebidas, água com gás, coca lata, água sem gás, fanta lata
+valorBebidas, 3.0, 5.0, 3.0, 5.0
+tamanho, g, m, p
+tipo, bovino, frango
+valorBovinoG, 19.99
+valorFrangoG, 19.99
+valorBovinoM, 18.0
+valorFrangoM, 18.0
+valorBovinoP, 15.0
+valorFrangoP, 15.0
