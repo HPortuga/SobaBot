@@ -18,6 +18,8 @@ info,ta atendento
 info,que horas abre 
 info,que horas fecha
 info,voce entrega
+info,quanto custa o frete
+info,qual o valor da entrega
 cardapio,tem cardápio
 cardapio,deixa eu ver o cardapio
 cardapio,me mostra o cardapio
@@ -26,10 +28,18 @@ cardapio,o que tem pra vender
 cardapio,trabalha com que
 cardapio,o que ta vendendo
 cardapio,gostaria de ver o cardapio
+cardapio,tem cardápio aí
+cardapio,tem um cardapio por favor
 conta,quanto fica
 conta,qual o valor
 conta,quanto dá
 conta,fica quanto no total
+conta,gostaria de saber o valor
+conta,pode me informar quanto deu
+conta,quanto vai ficar
+conta,quanto fica tudo
+conta,fecha pra mim
+conta,quanto vai dar
 pedido,quero pedir um sobá
 pedido,manda um sobá
 pedido,quero um sobá médio bovino e uma coca
