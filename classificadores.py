@@ -22,8 +22,8 @@ paramsKnn = {
 
 ###
 
-def tuneParamsKnn(x, y, params):
-  gridSearch = GridSearchCV(KNeighborsClassifier(), params, cv=2)
+def tuneParamsKnn(x, y, params):                          # change cv later
+  gridSearch = GridSearchCV(KNeighborsClassifier(), params, cv=5)
   gridSearch.fit(x, y)
 
   scores = list()
@@ -32,8 +32,11 @@ def tuneParamsKnn(x, y, params):
   params = gridSearch.cv_results_["params"]
   for mean, std, param in zip(means, stds, params):
     scores.append( {'mean':mean, 'std':std, 'params':param} )
+
+  scoreList = list()
+  scoreList = sorted(scores, key=lambda k: k["mean"], reverse=True)
   
-  return scores
+  return scoreList
 
 
 # Extracts X and Y from the dataset
@@ -41,20 +44,45 @@ def getDataAndLabels():
   fileName = "Dialogos.csv"
   df = pd.read_csv(fileName)
 
-  # corpus = ["ooi", "quero agua", "quero soba", "bom dia"]
+  ## Debug Input (smaller - for tests only)
+  # corpus = ["bom dia", "oi", "gostaria de fazer um pedido", "quero pedir"]
   # x = vectorizer.fit_transform(corpus)
-  # y = np.array(["saudacao", "pedido", "pedido", "saudacao"])
+  # y = np.array(["saudacao", "saudacao", "pedido", "pedido"])
+
+  ## Real Input
   corpus = df[["sentenca"]].values
   x = vectorizer.fit_transform(corpus.ravel())
   y = df[["intencao"]].values.ravel()
 
   return (x,y)
 
+# Logs the algorithm's result with GridSearchCV
+def writeParameterTuningLog(scores, algorithm, params):
+  log = open("./Logs/"+algorithm+".txt", "w")
+
+  log.write("Parameter Tuning: %s" % algorithm)
+  log.write("\n============================\n")
+  log.write("The following parameters were tuned to the algorithm with exhaustive search:\n")
+  
+  for param in params:
+    log.write("%s: %s\n" % (param, params[param]))
+
+  log.write("\n============================\n")
+  log.write("The results are:\n\n")
+
+  i = 0
+  for score in scores:
+    log.write("%d\n" % i)
+    log.write("  Mean: %f, Std: %f\n  Params: %s\n\n" % (score["mean"], score["std"], str(score["params"])))
+    i += 1
+
+  log.close()
+
 if __name__ == "__main__":
   x, y = getDataAndLabels()
 
-  print(tuneParamsKnn(x, y, paramsKnn))
-
+  scoreKnn = tuneParamsKnn(x, y, paramsKnn)
+  writeParameterTuningLog(scoreKnn, "KNN", paramsKnn)
 
   # model = KNeighborsClassifier(n_neighbors=1)
   # model.fit(x, y)
