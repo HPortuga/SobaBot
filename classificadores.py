@@ -11,7 +11,7 @@ vectorizer = TfidfVectorizer(sublinear_tf=True,
 ## Classifier Params
 paramsKnn = {
   "n_neighbors": [1], #np.arange(1, 10, 2),             # Num of neighbors used in classification
-  "weights": ["uniform", "distance"],             # Weight used in prediction
+  # "weights": ["uniform", "distance"],             # Weight used in prediction
   # "algorithm": ["ball_tree", "kd_tree", "brute"], # Algorithm used to compute the nearest neighbors
   # "leaf_size": np.arange(1, 60, 5),               # Leaf Size passet to BallTree or KDTree
   # "n_jobs": [1, 2, 3, -1]                         # Num of parallel jobs to run for neighbors search
@@ -24,7 +24,7 @@ paramsKnn = {
 
 # Tunes the given algorithm's params and returns best params and score list
 def tuneParamsKnn(x, y, params):                          
-  gridSearch = GridSearchCV(KNeighborsClassifier(), params, cv=2)
+  gridSearch = GridSearchCV(KNeighborsClassifier(), params, cv=5)
   gridSearch.fit(x, y)
 
   scores = list()
@@ -47,14 +47,14 @@ def getDataAndLabels():
   df = pd.read_csv(fileName)
 
   ## Debug Input (smaller - for tests only)
-  corpus = ["bom dia", "oi", "gostaria de fazer um pedido", "quero pedir"]
-  x = vectorizer.fit_transform(corpus)
-  y = np.array(["saudacao", "saudacao", "pedido", "pedido"])
+  # corpus = ["bom dia", "oi", "gostaria de fazer um pedido", "quero pedir"]
+  # x = vectorizer.fit_transform(corpus)
+  # y = np.array(["saudacao", "saudacao", "pedido", "pedido"])
 
   ## Real Input
-  # corpus = df[["sentenca"]].values
-  # x = vectorizer.fit_transform(corpus.ravel())
-  # y = df[["intencao"]].values.ravel()
+  corpus = df[["sentenca"]].values
+  x = vectorizer.fit_transform(corpus.ravel())
+  y = df[["intencao"]].values.ravel()
 
   return (x,y)
 
@@ -86,6 +86,13 @@ if __name__ == "__main__":
   bestParams, scoreKnn = tuneParamsKnn(x, y, paramsKnn)
   writeParameterTuningLog(scoreKnn, "KNN", paramsKnn)
   print(bestParams)
+
+  model = KNeighborsClassifier().set_params(**bestParams)
+  model.fit(x, y)
+
+  accuracy = model.score(x, y)
+
+  print("\nAcc: %f\n" % accuracy)
 
   # model = KNeighborsClassifier(n_neighbors=1)
   # model.fit(x, y)

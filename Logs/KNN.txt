@@ -1,17 +1,12 @@
 Parameter Tuning: KNN
 ============================
 The following parameters were tuned to the algorithm with exhaustive search:
-n_neighbors: [1]
-weights: ['uniform', 'distance']
+n_neighbors: [5]
 
 ============================
 The results are:
 
 0
-  Mean: 0.750000, Std: 0.250000
-  Params: {'n_neighbors': 1, 'weights': 'uniform'}
-
-1
-  Mean: 0.750000, Std: 0.250000
-  Params: {'n_neighbors': 1, 'weights': 'distance'}
+  Mean: 0.693333, Std: 0.035568
+  Params: {'n_neighbors': 5}
 
