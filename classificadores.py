@@ -10,11 +10,11 @@ vectorizer = TfidfVectorizer(sublinear_tf=True,
 
 ## Classifier Params
 paramsKnn = {
-  "n_neighbors": np.arange(1, 10, 2),             # Num of neighbors used in classification
+  "n_neighbors": [1], #np.arange(1, 10, 2),             # Num of neighbors used in classification
   "weights": ["uniform", "distance"],             # Weight used in prediction
-  "algorithm": ["ball_tree", "kd_tree", "brute"], # Algorithm used to compute the nearest neighbors
-  "leaf_size": np.arange(1, 60, 5),               # Leaf Size passet to BallTree or KDTree
-  "n_jobs": [1, 2, 3, -1]                         # Num of parallel jobs to run for neighbors search
+  # "algorithm": ["ball_tree", "kd_tree", "brute"], # Algorithm used to compute the nearest neighbors
+  # "leaf_size": np.arange(1, 60, 5),               # Leaf Size passet to BallTree or KDTree
+  # "n_jobs": [1, 2, 3, -1]                         # Num of parallel jobs to run for neighbors search
   # "p": [1, 2, 3],                                 # Power parameter for the Minkowski metric
   # "metric": ["euclidean", "manhattan",            # Distance metric used for the tree
   #            "minkowski"],
@@ -22,8 +22,9 @@ paramsKnn = {
 
 ###
 
-def tuneParamsKnn(x, y, params):                          # change cv later
-  gridSearch = GridSearchCV(KNeighborsClassifier(), params, cv=5)
+# Tunes the given algorithm's params and returns best params and score list
+def tuneParamsKnn(x, y, params):                          
+  gridSearch = GridSearchCV(KNeighborsClassifier(), params, cv=2)
   gridSearch.fit(x, y)
 
   scores = list()
@@ -35,8 +36,9 @@ def tuneParamsKnn(x, y, params):                          # change cv later
 
   scoreList = list()
   scoreList = sorted(scores, key=lambda k: k["mean"], reverse=True)
+  bestParams = scoreList[0]["params"]
   
-  return scoreList
+  return bestParams, scoreList
 
 
 # Extracts X and Y from the dataset
@@ -45,14 +47,14 @@ def getDataAndLabels():
   df = pd.read_csv(fileName)
 
   ## Debug Input (smaller - for tests only)
-  # corpus = ["bom dia", "oi", "gostaria de fazer um pedido", "quero pedir"]
-  # x = vectorizer.fit_transform(corpus)
-  # y = np.array(["saudacao", "saudacao", "pedido", "pedido"])
+  corpus = ["bom dia", "oi", "gostaria de fazer um pedido", "quero pedir"]
+  x = vectorizer.fit_transform(corpus)
+  y = np.array(["saudacao", "saudacao", "pedido", "pedido"])
 
   ## Real Input
-  corpus = df[["sentenca"]].values
-  x = vectorizer.fit_transform(corpus.ravel())
-  y = df[["intencao"]].values.ravel()
+  # corpus = df[["sentenca"]].values
+  # x = vectorizer.fit_transform(corpus.ravel())
+  # y = df[["intencao"]].values.ravel()
 
   return (x,y)
 
@@ -81,8 +83,9 @@ def writeParameterTuningLog(scores, algorithm, params):
 if __name__ == "__main__":
   x, y = getDataAndLabels()
 
-  scoreKnn = tuneParamsKnn(x, y, paramsKnn)
+  bestParams, scoreKnn = tuneParamsKnn(x, y, paramsKnn)
   writeParameterTuningLog(scoreKnn, "KNN", paramsKnn)
+  print(bestParams)
 
   # model = KNeighborsClassifier(n_neighbors=1)
   # model.fit(x, y)
