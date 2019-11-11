@@ -22,7 +22,7 @@ paramsKnn = {
 
 paramsDecisionTree = {
   "criterion": ["gini", "entropy"], # Measures the quality of a split
-  "splitter" : ["best", "random"],  # 
+  "splitter" : ["best", "random"],  # calaboca vai tomanocu
 }
 
 ###
