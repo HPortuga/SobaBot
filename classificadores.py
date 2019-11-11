@@ -23,6 +23,8 @@ paramsKnn = {
 paramsDecisionTree = {
   "criterion": ["gini", "entropy"], # Measures the quality of a split
   "splitter" : ["best", "random"],  # calaboca vai tomanocu
+  zpfsiofsidghisodhfso
+  asmoaisa
 }
 
 ###
@@ -45,6 +47,7 @@ def tuneParamsKnn(x, y, params):
   
   return bestParams, scoreList
 
+kasdkaoisdhaosi
 
 # Extracts X and Y from the dataset
 def getDataAndLabels():
