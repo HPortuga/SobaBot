@@ -10,7 +10,7 @@ vectorizer = TfidfVectorizer(sublinear_tf=True,
 
 ## Classifier Params
 paramsKnn = {
-  "n_neighbors": [1], #np.arange(1, 10, 2),             # Num of neighbors used in classification
+  "n_neighbors": np.arange(1, 10, 2),             # Num of neighbors used in classification
   # "weights": ["uniform", "distance"],             # Weight used in prediction
   # "algorithm": ["ball_tree", "kd_tree", "brute"], # Algorithm used to compute the nearest neighbors
   # "leaf_size": np.arange(1, 60, 5),               # Leaf Size passet to BallTree or KDTree
@@ -18,6 +18,11 @@ paramsKnn = {
   # "p": [1, 2, 3],                                 # Power parameter for the Minkowski metric
   # "metric": ["euclidean", "manhattan",            # Distance metric used for the tree
   #            "minkowski"],
+}
+
+paramsDecisionTree = {
+  "criterion": ["gini", "entropy"], # Measures the quality of a split
+  "splitter" : ["best", "random"],  # 
 }
 
 ###
@@ -93,6 +98,10 @@ if __name__ == "__main__":
   accuracy = model.score(x, y)
 
   print("\nAcc: %f\n" % accuracy)
+
+  text = "tem refrigerante"
+  inst = vectorizer.transform([text])
+  print(model.predict(inst))
 
   # model = KNeighborsClassifier(n_neighbors=1)
   # model.fit(x, y)
