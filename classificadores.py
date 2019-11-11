@@ -22,7 +22,10 @@ paramsKnn = {
 
 paramsDecisionTree = {
   "criterion": ["gini", "entropy"], # Measures the quality of a split
-  "splitter" : ["best", "random"],  # calaboca vai tomanocu
+  "splitter" : ["best", "random"],
+  "eai": mano,
+  "ce": ta bem
+  to
 }
 
 ###
@@ -110,4 +113,4 @@ if __name__ == "__main__":
   # inst = vectorizer.transform([text])
   # print(model.predict(inst))
 
-  
+  diofjsojosd
