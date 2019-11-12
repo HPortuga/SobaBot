@@ -35,27 +35,17 @@ paramsKnn = {
 }
 
 paramsDecisionTree = {
-  "criterion": ["gini", "entropy"],         # Measures the quality of a split
-  "splitter" : ["best", "random"],          # The strategy used to choose the split at each node
-  # "max_depth": [None, 2, 4, 6, 8, 
-  #               10, 15, 20, 30],            # The maximum depth of the tree
-  # "min_samples_split": [1, 1.5, 1.75,
-  #                        2.5, 2.75, 3,
-  #                        3.75, 4],          # Minimum number of samples required to split an internal node
-  # "min_samples_leaf":  [1.2, 1.75, 2, 2.3,
-  #                        2.5, 2.75, 3, 3.5,
-  #                        4, 4.5, 5],        # The minimum number of samples required to be at a leaf node.
-  # "min_weight_fraction_leaf" : ["auto", "sqrt", "log2", None,
-  #                               1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-  #                               1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
-  #                               4.5, 4.75, 5.5, 5.85, 6.23, 6.42], # The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node
-  # "max_features": ["auto", "sqrt", "log2", None,
-  #                 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-  #                 1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
-  #                 4.5, 4.75, 5.5, 5.85, 6.23, 6.42],    # The number of features to consider when looking for the best split
-  # "max_leaf_nodes": [1, 5, 10, 20, None],
-  # "min_impurity_decrease": [0.1, 0.5, 0.75, 1, 1.3, 1.5, 1.7,
-  #                           2, 2.4, 2.6, 2.87, 3.2, 4, 5.6, 7], 
+  "criterion": ["gini", "entropy"],                         # Measures the quality of a split
+  "splitter" : ["best", "random"],                          # The strategy used to choose the split at each node
+  "max_depth": [None, 2, 4, 8, 16],                         # The maximum depth of the tree
+  "min_samples_split": [1, 1.5, 1.75, 2, 2.5, 6],           # Minimum number of samples required to split an internal node
+  "min_samples_leaf":  [1.2, 1.75, 2, 2.3, 4, 3.5],         # The minimum number of samples required to be at a leaf node.
+  "min_weight_fraction_leaf": [0., 0.3, 0.5, 1.2, 2],       # Minimum wifhted fraction of the sum of total weights required to be a lead
+  "max_features": ["auto", "sqrt", "log2", None, 1, 2.5, 3] # The number of features to consider when looking for the best split
+  "random_state": [1, 4, 8, 16, None],                      # Seed for the random number generator
+  "max_leaf_nodes": [1, 5, 10, 20, None],                   # Max number of leaf nodes
+  "min_impurity_decrease": [0., 0.2, 0.7, 1.2, 3],          # Node will be split of this split induces decrease of impurity
+  "presort": [True, False]                                  # Presort data
 }
 
 paramsNaiveBayes = {}
