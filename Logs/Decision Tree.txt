@@ -8,18 +8,18 @@ splitter: ['best', 'random']
 The results are:
 
 0
-  Mean: 0.746667, Std: 0.153313
-  Params: {'criterion': 'entropy', 'splitter': 'best'}
+  Mean: 0.760000, Std: 0.126441
+  Params: {'criterion': 'gini', 'splitter': 'random'}
 
 1
-  Mean: 0.733333, Std: 0.162324
-  Params: {'criterion': 'gini', 'splitter': 'best'}
+  Mean: 0.760000, Std: 0.148602
+  Params: {'criterion': 'entropy', 'splitter': 'best'}
 
 2
-  Mean: 0.720000, Std: 0.051146
-  Params: {'criterion': 'entropy', 'splitter': 'random'}
+  Mean: 0.746667, Std: 0.176082
+  Params: {'criterion': 'gini', 'splitter': 'best'}
 
 3
-  Mean: 0.706667, Std: 0.129173
-  Params: {'criterion': 'gini', 'splitter': 'random'}
+  Mean: 0.733333, Std: 0.112122
+  Params: {'criterion': 'entropy', 'splitter': 'random'}
 

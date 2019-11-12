@@ -1,13 +1,18 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
-from Model import Model
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import precision_score
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import recall_score
+
 import numpy as np
 import pandas as pd
+
+from Model import Model
 
 ### Global
 vectorizer = TfidfVectorizer(sublinear_tf=True,
@@ -28,26 +33,25 @@ paramsKnn = {
 paramsDecisionTree = {
   "criterion": ["gini", "entropy"],         # Measures the quality of a split
   "splitter" : ["best", "random"],          # The strategy used to choose the split at each node
-  "max_depth": [None, 2, 4, 6, 8, 
-                10, 15, 20, 30],            # The maximum depth of the tree
-  "min_samples_split": [1, 1.5, 1.75,
-                         2.5, 2.75, 3,
-                         3.75, 4],          # Minimum number of samples required to split an internal node
-  "min_samples_leaf":  [1.2, 1.75, 2, 2.3,
-                         2.5, 2.75, 3, 3.5,
-                         4, 4.5, 5],        # The minimum number of samples required to be at a leaf node.
-  "min_weight_fraction_leaf" : ["auto", "sqrt", "log2", None,
-                                1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-                                1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
-                                4.5, 4.75, 5.5, 5.85, 6.23, 6.42], # The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node
-  "max_features": ["auto", "sqrt", "log2", None,
-                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-                  1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
-                  4.5, 4.75, 5.5, 5.85, 6.23, 6.42],    # The number of features to consider when looking for the best split
-  "random_state": np.random(10),                        #  
-  "max_leaf_nodes": [1, 5, 10, 20, None],
-  "min_impurity_decrease": [0.1, 0.5, 0.75, 1, 1.3, 1.5, 1.7,
-                            2, 2.4, 2.6, 2.87, 3.2, 4, 5.6, 7], 
+  # "max_depth": [None, 2, 4, 6, 8, 
+  #               10, 15, 20, 30],            # The maximum depth of the tree
+  # "min_samples_split": [1, 1.5, 1.75,
+  #                        2.5, 2.75, 3,
+  #                        3.75, 4],          # Minimum number of samples required to split an internal node
+  # "min_samples_leaf":  [1.2, 1.75, 2, 2.3,
+  #                        2.5, 2.75, 3, 3.5,
+  #                        4, 4.5, 5],        # The minimum number of samples required to be at a leaf node.
+  # "min_weight_fraction_leaf" : ["auto", "sqrt", "log2", None,
+  #                               1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+  #                               1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
+  #                               4.5, 4.75, 5.5, 5.85, 6.23, 6.42], # The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node
+  # "max_features": ["auto", "sqrt", "log2", None,
+  #                 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+  #                 1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
+  #                 4.5, 4.75, 5.5, 5.85, 6.23, 6.42],    # The number of features to consider when looking for the best split
+  # "max_leaf_nodes": [1, 5, 10, 20, None],
+  # "min_impurity_decrease": [0.1, 0.5, 0.75, 1, 1.3, 1.5, 1.7,
+  #                           2, 2.4, 2.6, 2.87, 3.2, 4, 5.6, 7], 
 }
 
 paramsNaiveBayes = {}
@@ -111,15 +115,18 @@ if __name__ == "__main__":
 
     model.classifier.set_params(**bestParams)
     model.classifier.fit(model.data, model.labels)
+    
+    # TODO: Use testing dataset to check metrics
+    predictedLabels = model.classifier.predict(model.data)
 
-    accuracy = model.classifier.score(model.data, model.labels)
-    print("Algoritmo: %s\n" % model.name)
-    print("Acuracia: %.2f\n\n" % accuracy)
+    # TODO: We have to log this metrics
+    accuracy = accuracy_score(model.labels, predictedLabels)
+    precisionScore = precision_score(model.labels, preditedLabels)
+    recallScore = recall_score(model.labels, predictedLabels)
 
-
-  # model = KNeighborsClassifier(n_neighbors=1)
-  # model.fit(x, y)
 
   # text = "Que horas abre?"
   # inst = vectorizer.transform([text])
   # print(model.predict(inst))
+
+  
