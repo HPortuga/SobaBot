@@ -15,7 +15,7 @@ vectorizer = TfidfVectorizer(sublinear_tf=True,
 
 ## Classifier Params
 paramsKnn = {
-  "n_neighbors": np.arange(1, 10, 2),             # Num of neighbors used in classification
+  "n_neighbors": np.arange(1, 10, 2),               # Num of neighbors used in classification
   # "weights": ["uniform", "distance"],             # Weight used in prediction
   # "algorithm": ["ball_tree", "kd_tree", "brute"], # Algorithm used to compute the nearest neighbors
   # "leaf_size": np.arange(1, 60, 5),               # Leaf Size passet to BallTree or KDTree
@@ -26,8 +26,28 @@ paramsKnn = {
 }
 
 paramsDecisionTree = {
-  "criterion": ["gini", "entropy"], # Measures the quality of a split
-  "splitter" : ["best", "random"]
+  "criterion": ["gini", "entropy"],         # Measures the quality of a split
+  "splitter" : ["best", "random"],          # The strategy used to choose the split at each node
+  "max_depth": [None, 2, 4, 6, 8, 
+                10, 15, 20, 30],            # The maximum depth of the tree
+  "min_samples_split": [1, 1.5, 1.75,
+                         2.5, 2.75, 3,
+                         3.75, 4],          # Minimum number of samples required to split an internal node
+  "min_samples_leaf":  [1.2, 1.75, 2, 2.3,
+                         2.5, 2.75, 3, 3.5,
+                         4, 4.5, 5],        # The minimum number of samples required to be at a leaf node.
+  "min_weight_fraction_leaf" : ["auto", "sqrt", "log2", None,
+                                1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+                                1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
+                                4.5, 4.75, 5.5, 5.85, 6.23, 6.42], # The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node
+  "max_features": ["auto", "sqrt", "log2", None,
+                  1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+                  1.5, 1.75, 2.5, 2.75, 3.5, 3.75,
+                  4.5, 4.75, 5.5, 5.85, 6.23, 6.42],    # The number of features to consider when looking for the best split
+  "random_state": np.random(10),                        #  
+  "max_leaf_nodes": [1, 5, 10, 20, None],
+  "min_impurity_decrease": [0.1, 0.5, 0.75, 1, 1.3, 1.5, 1.7,
+                            2, 2.4, 2.6, 2.87, 3.2, 4, 5.6, 7], 
 }
 
 paramsNaiveBayes = {}
