@@ -1,6 +1,11 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
+from Model import Model
 import numpy as np
 import pandas as pd
 
@@ -44,6 +49,12 @@ paramsDecisionTree = {
   "min_impurity_decrease": [0.1, 0.5, 0.75, 1, 1.3, 1.5, 1.7,
                             2, 2.4, 2.6, 2.87, 3.2, 4, 5.6, 7], 
 }
+
+paramsNaiveBayes = {}
+
+paramsLogisticReg = {}
+
+paramsNeuralNetwork = {}
 
 ###
 
@@ -105,6 +116,13 @@ def writeParameterTuningLog(scores, algorithm, params):
   log.close()
 
 if __name__ == "__main__":
+  # Instantiating learning algorithms
+  knn = Model("KNN", KNeighborsClassifier(), paramsKnn)
+  decisionTree = Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree)
+  naiveBayes = Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes)
+  logisticReg = Model("Logistic Regression", LogisticRegression(), paramsLogisticReg)
+  neuralNetwork = Model("Neural Network", MLPClassifier(), paramsNeuralNetwork)
+
   x, y = getDataAndLabels()
 
   bestParams, scoreKnn = tuneParamsKnn(x, y, paramsKnn)
