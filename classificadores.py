@@ -1,6 +1,11 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
+from Model import Model
 import numpy as np
 import pandas as pd
 
@@ -22,11 +27,14 @@ paramsKnn = {
 
 paramsDecisionTree = {
   "criterion": ["gini", "entropy"], # Measures the quality of a split
-  "splitter" : ["best", "random"],
-  "eai": mano,
-  "ce": ta bem
-  to
+  "splitter" : ["best", "random"]
 }
+
+paramsNaiveBayes = {}
+
+paramsLogisticReg = {}
+
+paramsNeuralNetwork = {}
 
 ###
 
@@ -47,8 +55,6 @@ def tuneParamsKnn(x, y, params):
   bestParams = scoreList[0]["params"]
   
   return bestParams, scoreList
-
-kasdkaoisdhaosi
 
 # Extracts X and Y from the dataset
 def getDataAndLabels():
@@ -90,6 +96,13 @@ def writeParameterTuningLog(scores, algorithm, params):
   log.close()
 
 if __name__ == "__main__":
+  # Instantiating learning algorithms
+  knn = Model("KNN", KNeighborsClassifier(), paramsKnn)
+  decisionTree = Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree)
+  naiveBayes = Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes)
+  logisticReg = Model("Logistic Regression", LogisticRegression(), paramsLogisticReg)
+  neuralNetwork = Model("Neural Network", MLPClassifier(), paramsNeuralNetwork)
+
   x, y = getDataAndLabels()
 
   bestParams, scoreKnn = tuneParamsKnn(x, y, paramsKnn)
@@ -113,5 +126,3 @@ if __name__ == "__main__":
   # text = "Que horas abre?"
   # inst = vectorizer.transform([text])
   # print(model.predict(inst))
-
-  diofjsojosd
