@@ -1,0 +1,11 @@
+Parameter Tuning: Neural Network
+============================
+The following parameters were tuned to the algorithm with exhaustive search:
+
+============================
+The results are:
+
+0
+  Mean: 0.733333, Std: 0.061270
+  Params: {}
+

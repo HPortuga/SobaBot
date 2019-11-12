@@ -73,52 +73,29 @@ def getDataAndLabels():
 
   return (x,y)
 
-# Logs the algorithm's result with GridSearchCV
-def writeParameterTuningLog(scores, algorithm, params):
-  log = open("./Logs/"+algorithm+".txt", "w")
-
-  log.write("Parameter Tuning: %s" % algorithm)
-  log.write("\n============================\n")
-  log.write("The following parameters were tuned to the algorithm with exhaustive search:\n")
-  
-  for param in params:
-    log.write("%s: %s\n" % (param, params[param]))
-
-  log.write("\n============================\n")
-  log.write("The results are:\n\n")
-
-  i = 0
-  for score in scores:
-    log.write("%d\n" % i)
-    log.write("  Mean: %f, Std: %f\n  Params: %s\n\n" % (score["mean"], score["std"], str(score["params"])))
-    i += 1
-
-  log.close()
-
 if __name__ == "__main__":
   # Instantiating learning algorithms
-  knn = Model("KNN", KNeighborsClassifier(), paramsKnn)
-  decisionTree = Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree)
-  naiveBayes = Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes)
-  logisticReg = Model("Logistic Regression", LogisticRegression(), paramsLogisticReg)
-  neuralNetwork = Model("Neural Network", MLPClassifier(), paramsNeuralNetwork)
+  models = [
+    Model("KNN", KNeighborsClassifier(), paramsKnn),
+    Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
+    Model("Logistic Regression", MultinomialNB(), paramsNaiveBayes),
+    Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),
+  ]
 
-  x, y = getDataAndLabels()
+  for model in models:
+    x, y = getDataAndLabels()
+    model.setData(x)
+    model.setLabels(y)
 
-  bestParams, scoreKnn = tuneParamsKnn(x, y, paramsKnn)
-  writeParameterTuningLog(scoreKnn, "KNN", paramsKnn)
-  print(bestParams)
+    bestParams, score = model.tune()
 
-  model = KNeighborsClassifier().set_params(**bestParams)
-  model.fit(x, y)
+    model.classifier.set_params(**bestParams)
+    model.classifier.fit(model.data, model.labels)
 
-  accuracy = model.score(x, y)
+    accuracy = model.classifier.score(model.data, model.labels)
+    print("Algoritmo: %s\n" % model.name)
+    print("Acuracia: %.2f\n\n" % accuracy)
 
-  print("\nAcc: %f\n" % accuracy)
-
-  text = "tem refrigerante"
-  inst = vectorizer.transform([text])
-  print(model.predict(inst))
 
   # model = KNeighborsClassifier(n_neighbors=1)
   # model.fit(x, y)

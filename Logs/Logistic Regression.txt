@@ -1,0 +1,11 @@
+Parameter Tuning: Logistic Regression
+============================
+The following parameters were tuned to the algorithm with exhaustive search:
+
+============================
+The results are:
+
+0
+  Mean: 0.600000, Std: 0.045426
+  Params: {}
+

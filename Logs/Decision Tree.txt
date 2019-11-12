@@ -1,0 +1,25 @@
+Parameter Tuning: Decision Tree
+============================
+The following parameters were tuned to the algorithm with exhaustive search:
+criterion: ['gini', 'entropy']
+splitter: ['best', 'random']
+
+============================
+The results are:
+
+0
+  Mean: 0.746667, Std: 0.153313
+  Params: {'criterion': 'entropy', 'splitter': 'best'}
+
+1
+  Mean: 0.733333, Std: 0.162324
+  Params: {'criterion': 'gini', 'splitter': 'best'}
+
+2
+  Mean: 0.720000, Std: 0.051146
+  Params: {'criterion': 'entropy', 'splitter': 'random'}
+
+3
+  Mean: 0.706667, Std: 0.129173
+  Params: {'criterion': 'gini', 'splitter': 'random'}
+
