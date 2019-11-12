@@ -4,6 +4,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import LeaveOneOut
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import precision_score
 from sklearn.metrics import accuracy_score
@@ -17,6 +18,9 @@ from Model import Model
 ### Global
 vectorizer = TfidfVectorizer(sublinear_tf=True,
     max_df=0.5, strip_accents="unicode")
+
+# TODO: this has to be dynamic
+nSplits = 5
 
 ## Classifier Params
 paramsKnn = {
@@ -108,21 +112,30 @@ if __name__ == "__main__":
 
   for model in models:
     x, y = getDataAndLabels()
-    model.setData(x)
-    model.setLabels(y)
 
-    bestParams, score = model.tune()
+    leaveOneOut = LeaveOneOut()
+    leaveOneOut.get_n_splits(x)
 
-    model.classifier.set_params(**bestParams)
-    model.classifier.fit(model.data, model.labels)
+    for trainIndex, testIndex in leaveOneOut.split(x):
+      dataTrain, dataTest = x[trainIndex], x[testIndex]
+      labelsTrain, labelsTest = y[trainIndex], y[testIndex]
     
-    # TODO: Use testing dataset to check metrics
-    predictedLabels = model.classifier.predict(model.data)
+      model.setData(dataTrain)
+      model.setLabels(labelsTrain)
 
-    # TODO: We have to log this metrics
-    accuracy = accuracy_score(model.labels, predictedLabels)
-    precisionScore = precision_score(model.labels, preditedLabels)
-    recallScore = recall_score(model.labels, predictedLabels)
+      model.tune(nSplits)
+      model.fit()
+    
+      predictedLabels = model.predict(dataTest)
+
+      # TODO: We have to log this metrics
+      accuracy = accuracy_score(labelsTest, predictedLabels)
+      precisionScore = precision_score(labelsTest, predictedLabels)
+      recallScore = recall_score(labelsTest, predictedLabels)
+
+      print("\n\n")
+      print("Acc: %f\nPrecision: %f\nRecall: %f\n\n\n"
+        % (accuracy, precisionScore, recallScore))
 
 
   # text = "Que horas abre?"
