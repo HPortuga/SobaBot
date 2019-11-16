@@ -1,4 +1,5 @@
 from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 import Logger
 
 class Model():
@@ -12,6 +13,24 @@ class Model():
 
   def setLabels(self, y):
     self.labels = y
+
+  def randomSearchTune(self, nSplits):
+    randomSearch = RandomizedSearchCV(self.classifier, self.possibleParams, cv=nSplits)
+    randomSearch.fit(self.data, self.labels)
+
+    scores = list()
+    means = randomSearch.cv_results_["mean_test_score"]
+    stds = randomSearch.cv_results_["std_test_score"]
+    params = randomSearch.cv_results_["params"]
+    for mean, std, param in zip(means, stds, params):
+      scores.append( {'mean':mean, 'std':std, 'params':param} )
+
+    self.scoreList = list()
+    self.scoreList = sorted(scores, key=lambda k: k["mean"], reverse=True)
+    self.bestParams = self.scoreList[0]["params"]
+    self.setParams(self.bestParams)
+    
+    Logger.writeParameterTuningLog(self.scoreList, self.name, self.possibleParams)
 
   # Tunes the given algorithm's params, sets algorithm's params and logs score
   def tune(self, nSplits):
