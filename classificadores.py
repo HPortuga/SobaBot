@@ -94,13 +94,9 @@ if __name__ == "__main__":
     model.setData(x)
     model.setLabels(y)
     
+    print("Training %s... Please be patient as this can take a while.\n" % model.name)
     model.train(nSplits)
-
     modelScores[model.name] = model.looFinalScore
+    print("Model got accuracy = %.2f;\n\n" % model.looFinalScore["accuracy"])
 
-  # Find best classifier
   bestClassifier = max(modelScores.items())
-
-  # Log best params for best classifier so we don't have to tune it every time
-
-  # Infinite loop with best classifier
