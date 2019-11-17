@@ -72,10 +72,12 @@ if __name__ == "__main__":
   models = [
     Model("KNN", KNeighborsClassifier(), paramsKnn),
     # Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
-    # Model("Logistic Regression", MultinomialNB(), paramsNaiveBayes),
+    # Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
+    # Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
     # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),
   ]
 
+  modelScores = dict()
   x, y = getDataAndLabels()
   for model in models:
     leaveOneOut = LeaveOneOut()
@@ -163,5 +165,11 @@ if __name__ == "__main__":
         param = str(prediction["params"])
         paramDict[param] += param.count(param)
 
-    mostRecurringParam = max(paramDict.items())[0]
-    modelFinalScore = correct / len(looScore)
+    model.bestParams = max(paramDict.items())[0]
+    model.finalScore = correct / len(looScore)
+    modelScores[model.name] = model.finalScore
+
+  # Find best classifier
+  bestClassifier = max(modelScores.items())
+
+  # Infinite loop with best classifier
