@@ -1,11 +1,53 @@
 Parameter Tuning: Neural Network
 ============================
 The following parameters were tuned to the algorithm with exhaustive search:
+activation: ['identity', 'logistic', 'tanh', 'relu']
+solver: ['sgd', 'adam']
+alpha: [0.001, 0.0001, 1e-05]
+learning_rate: ['constant', 'invscaling', 'adaptive']
+max_iter: [200 300 400 500]
+warm_start: [True, False]
 
 ============================
 The results are:
 
 0
-  Mean: 0.733333, Std: 0.061270
-  Params: {}
+  Mean: 0.816514, Std: 0.076295
+  Params: {'warm_start': True, 'solver': 'adam', 'max_iter': 400, 'learning_rate': 'adaptive', 'alpha': 0.0001, 'activation': 'identity'}
+
+1
+  Mean: 0.798165, Std: 0.083302
+  Params: {'warm_start': False, 'solver': 'adam', 'max_iter': 400, 'learning_rate': 'constant', 'alpha': 0.001, 'activation': 'tanh'}
+
+2
+  Mean: 0.798165, Std: 0.110774
+  Params: {'warm_start': True, 'solver': 'adam', 'max_iter': 300, 'learning_rate': 'invscaling', 'alpha': 0.001, 'activation': 'relu'}
+
+3
+  Mean: 0.788991, Std: 0.076338
+  Params: {'warm_start': True, 'solver': 'adam', 'max_iter': 400, 'learning_rate': 'invscaling', 'alpha': 0.001, 'activation': 'tanh'}
+
+4
+  Mean: 0.779817, Std: 0.104050
+  Params: {'warm_start': False, 'solver': 'adam', 'max_iter': 300, 'learning_rate': 'invscaling', 'alpha': 1e-05, 'activation': 'identity'}
+
+5
+  Mean: 0.779817, Std: 0.093643
+  Params: {'warm_start': True, 'solver': 'adam', 'max_iter': 400, 'learning_rate': 'constant', 'alpha': 1e-05, 'activation': 'logistic'}
+
+6
+  Mean: 0.614679, Std: 0.077502
+  Params: {'warm_start': False, 'solver': 'adam', 'max_iter': 200, 'learning_rate': 'adaptive', 'alpha': 1e-05, 'activation': 'logistic'}
+
+7
+  Mean: 0.348624, Std: 0.027134
+  Params: {'warm_start': False, 'solver': 'sgd', 'max_iter': 500, 'learning_rate': 'constant', 'alpha': 1e-05, 'activation': 'tanh'}
+
+8
+  Mean: 0.339450, Std: 0.016366
+  Params: {'warm_start': True, 'solver': 'sgd', 'max_iter': 200, 'learning_rate': 'constant', 'alpha': 1e-05, 'activation': 'logistic'}
+
+9
+  Mean: 0.183486, Std: 0.071641
+  Params: {'warm_start': True, 'solver': 'sgd', 'max_iter': 500, 'learning_rate': 'invscaling', 'alpha': 0.0001, 'activation': 'logistic'}
 

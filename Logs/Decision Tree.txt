@@ -3,23 +3,48 @@ Parameter Tuning: Decision Tree
 The following parameters were tuned to the algorithm with exhaustive search:
 criterion: ['gini', 'entropy']
 splitter: ['best', 'random']
+max_depth: [None, 2, 4, 8, 16]
 
 ============================
 The results are:
 
 0
-  Mean: 0.760000, Std: 0.126441
-  Params: {'criterion': 'gini', 'splitter': 'random'}
+  Mean: 0.596330, Std: 0.040181
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 1
-  Mean: 0.760000, Std: 0.148602
-  Params: {'criterion': 'entropy', 'splitter': 'best'}
+  Mean: 0.577982, Std: 0.101848
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 2
-  Mean: 0.746667, Std: 0.176082
-  Params: {'criterion': 'gini', 'splitter': 'best'}
+  Mean: 0.541284, Std: 0.046953
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 3
-  Mean: 0.733333, Std: 0.112122
-  Params: {'criterion': 'entropy', 'splitter': 'random'}
+  Mean: 0.495413, Std: 0.079032
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+4
+  Mean: 0.486239, Std: 0.026816
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+
+5
+  Mean: 0.449541, Std: 0.101023
+  Params: {'splitter': 'random', 'max_depth': 8, 'criterion': 'entropy'}
+
+6
+  Mean: 0.449541, Std: 0.077912
+  Params: {'splitter': 'best', 'max_depth': 8, 'criterion': 'entropy'}
+
+7
+  Mean: 0.376147, Std: 0.067512
+  Params: {'splitter': 'best', 'max_depth': 4, 'criterion': 'entropy'}
+
+8
+  Mean: 0.339450, Std: 0.083124
+  Params: {'splitter': 'best', 'max_depth': 2, 'criterion': 'entropy'}
+
+9
+  Mean: 0.330275, Std: 0.071628
+  Params: {'splitter': 'best', 'max_depth': 2, 'criterion': 'gini'}
 
