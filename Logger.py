@@ -1,4 +1,4 @@
-# Logs the algorithm's GridSearchCV result
+# Logs the algorithm's RandomSearchCV result
 def writeParameterTuningLog(scores, algorithm, params):
   log = open("./Logs/"+algorithm+".txt", "w")
 

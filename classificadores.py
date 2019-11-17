@@ -6,12 +6,9 @@ warnings.warn = warn
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import StratifiedKFold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
-from sklearn.model_selection import GridSearchCV
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import LeaveOneOut
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import precision_score
 from sklearn.metrics import accuracy_score
@@ -30,14 +27,13 @@ vectorizer = TfidfVectorizer(sublinear_tf=True,
 # TODO: this has to be dynamic
 nSplits = 5
 
-## Classifier Params
+### Classifier Params
 paramsKnn = {
   "n_neighbors": np.arange(1, 10, 2),                       # Num of neighbors used in classification
   "weights": ["uniform", "distance"],                       # Weight used in prediction
   "algorithm": ["ball_tree", "kd_tree", "brute"],           # Algorithm used to compute the nearest neighbors
   "metric": ["euclidean", "manhattan"]                      # Distance metric used for the tree
 }
-
 
 paramsDecisionTree = {
   "criterion": ["gini", "entropy"],                         # Measures the quality of a split
@@ -86,77 +82,21 @@ if __name__ == "__main__":
   models = [
     # Model("KNN", KNeighborsClassifier(), paramsKnn),
     Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
-    Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
+    # Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
     # Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
     # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),       # WARNING: Neural Network takes too long!
   ]
 
   modelScores = dict()
   x, y = getDataAndLabels()
+
   for model in models:
-    leaveOneOut = LeaveOneOut()
-    stratkFold = StratifiedKFold(nSplits)
-
-    looScore = list()
-    stratkFoldScores = list()
-
-    # This will train with every row except one, then test with that one
-    for trainIndex, testIndex in leaveOneOut.split(x):
-      dataTrain, dataTest = x[trainIndex], x[testIndex]
-      labelsTrain, labelTest = y[trainIndex], y[testIndex]
-
-      model.tune(x, y, nSplits)
-
-      model.bestParams = foldScore[0]["params"]
-      model.setData(dataTrain)
-      model.setLabels(labelsTrain)
-      model.fit()
-      predictedLabels = model.predict(dataTest)
-
-      accuracyScore = accuracy_score(labelTest, predictedLabels)
-      precisionScore = precision_score(labelTest, predictedLabels, average="micro")
-      recallScore = recall_score(labelTest, predictedLabels, average="micro")
-      
-      # TODO: Log LOO score
-      looScore.append({
-        "accuracy": accuracyScore,
-        "precision": precisionScore,
-        "recall": recallScore,
-        "params": model.bestParams
-      })
-
-    correct = 0
-    paramDict = dict()
-    for prediction in looScore:
-      if (prediction["accuracy"] == 1.0):
-        correct += 1
-        
-        param = str(prediction["params"])
-        paramDict[param] = 0
-
-    for prediction in looScore:
-      if (prediction["accuracy"] == 1.0):
-        param = str(prediction["params"])
-        paramDict[param] += param.count(param)
-
-    accuracy = 0
-    precision = 0
-    recall = 0
-    looFinalScore = list()
-    for score in looScore:
-      accuracy += score["accuracy"]
-      precision += score["precision"]
-      recall += score["recall"]
+    model.setData(x)
+    model.setLabels(y)
     
-    looFinalScore.append({
-      "accuracy": accuracy / len(looScore),
-      "precision": precision / len(looScore),
-      "recall": recall / len(looScore)
-    })
+    model.train(nSplits)
 
-    model.bestParams = max(paramDict.items(), key=operator.itemgetter(1))[0]
-    looFinalScore["params"] = model.bestParams
-    modelScores[model.name] = looFinalScore
+    modelScores[model.name] = model.looFinalScore
 
   # Find best classifier
   bestClassifier = max(modelScores.items())
