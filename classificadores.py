@@ -84,11 +84,11 @@ def getDataAndLabels():
 
 if __name__ == "__main__":
   models = [
-    Model("KNN", KNeighborsClassifier(), paramsKnn),
+    # Model("KNN", KNeighborsClassifier(), paramsKnn),
     Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
     Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
-    Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
-    # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),          # WARN: Neural Network takes too long!
+    # Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
+    # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),       # WARNING: Neural Network takes too long!
   ]
 
   modelScores = dict()
@@ -105,47 +105,7 @@ if __name__ == "__main__":
       dataTrain, dataTest = x[trainIndex], x[testIndex]
       labelsTrain, labelTest = y[trainIndex], y[testIndex]
 
-      # Test is (dataTest,labelsTest)
-      # Leave the test aside and split the train data once more
-      foldScore = list()
-      for i, j in stratkFold.split(dataTrain, labelsTrain):
-        xTrain, xTest = dataTrain[i], dataTrain[j]
-        yTrain, yTest = labelsTrain[i], labelsTrain[j]
-
-        model.setData(xTrain)
-        model.setLabels(yTrain)
-        model.randomSearchTune(nSplits)
-        model.fit()
-        predictedLabels = model.predict(xTest)
-
-        # TODO: Log score for each fold
-        accuracyScore = accuracy_score(yTest, predictedLabels)
-        precisionScore = precision_score(yTest, predictedLabels, average="micro")
-        recallScore = recall_score(yTest, predictedLabels, average="micro")
-        
-        foldScore.append({
-          "accuracy": accuracyScore,
-          "precision": precisionScore,
-          "recall": recallScore,
-          "params": model.bestParams
-        })
-
-        foldScore = sorted(foldScore, key=lambda k: k["accuracy"], reverse=True)
-
-      # TODO: Log Strat K Fold score
-      accuracy = 0
-      precision = 0
-      recall = 0
-      for fold in foldScore:
-        accuracy += fold["accuracy"]
-        precision += fold["precision"]
-        recall += fold["recall"]
-
-      stratkFoldScores.append({
-        "accuracy": accuracy / len(foldScore),
-        "precision": precision / len(foldScore),
-        "recall": recall / len(foldScore)
-      })
+      model.tune(x, y, nSplits)
 
       model.bestParams = foldScore[0]["params"]
       model.setData(dataTrain)
@@ -179,11 +139,28 @@ if __name__ == "__main__":
         param = str(prediction["params"])
         paramDict[param] += param.count(param)
 
+    accuracy = 0
+    precision = 0
+    recall = 0
+    looFinalScore = list()
+    for score in looScore:
+      accuracy += score["accuracy"]
+      precision += score["precision"]
+      recall += score["recall"]
+    
+    looFinalScore.append({
+      "accuracy": accuracy / len(looScore),
+      "precision": precision / len(looScore),
+      "recall": recall / len(looScore)
+    })
+
     model.bestParams = max(paramDict.items(), key=operator.itemgetter(1))[0]
-    model.finalScore = correct / len(looScore)
-    modelScores[model.name] = model.finalScore
+    looFinalScore["params"] = model.bestParams
+    modelScores[model.name] = looFinalScore
 
   # Find best classifier
   bestClassifier = max(modelScores.items())
+
+  # Log best params for best classifier so we don't have to tune it every time
 
   # Infinite loop with best classifier

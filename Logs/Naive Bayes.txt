@@ -17,23 +17,23 @@ The results are:
 
 2
   Mean: 0.770642, Std: 0.099401
-  Params: {'fit_prior': False, 'alpha': 2.5}
+  Params: {'fit_prior': False, 'alpha': 4.5}
 
 3
-  Mean: 0.697248, Std: 0.051322
-  Params: {'fit_prior': True, 'alpha': 0.5}
+  Mean: 0.770642, Std: 0.099401
+  Params: {'fit_prior': False, 'alpha': 3.0}
 
 4
-  Mean: 0.596330, Std: 0.045945
-  Params: {'fit_prior': True, 'alpha': 1.0}
+  Mean: 0.770642, Std: 0.099401
+  Params: {'fit_prior': False, 'alpha': 3.5}
 
 5
-  Mean: 0.467890, Std: 0.048546
-  Params: {'fit_prior': True, 'alpha': 1.5}
+  Mean: 0.770642, Std: 0.099401
+  Params: {'fit_prior': False, 'alpha': 4.0}
 
 6
-  Mean: 0.403670, Std: 0.053373
-  Params: {'fit_prior': True, 'alpha': 2.0}
+  Mean: 0.697248, Std: 0.051322
+  Params: {'fit_prior': True, 'alpha': 0.5}
 
 7
   Mean: 0.348624, Std: 0.048542
@@ -45,5 +45,5 @@ The results are:
 
 9
   Mean: 0.339450, Std: 0.029509
-  Params: {'fit_prior': True, 'alpha': 3.5}
+  Params: {'fit_prior': True, 'alpha': 4.5}
 
