@@ -15,41 +15,41 @@ The results are:
 
 0
   Mean: 0.770642, Std: 0.114419
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 1
   Mean: 0.761468, Std: 0.111859
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': None, 'C': 3.5999999999999996}
 
 2
   Mean: 0.761468, Std: 0.111859
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': None, 'C': 3.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 1.3499999999999999}
 
 3
   Mean: 0.761468, Std: 0.111859
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 4
-  Mean: 0.761468, Std: 0.116639
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
+  Mean: 0.761468, Std: 0.111859
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 1.3499999999999999}
 
 5
-  Mean: 0.743119, Std: 0.109094
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': None, 'C': 0.6}
+  Mean: 0.761468, Std: 0.111859
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 6
-  Mean: 0.733945, Std: 0.106343
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': None, 'C': 0.35}
+  Mean: 0.761468, Std: 0.111859
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 1.5999999999999999}
 
 7
-  Mean: 0.733945, Std: 0.111360
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 0.8499999999999999}
+  Mean: 0.752294, Std: 0.107709
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 0.1}
 
 8
-  Mean: 0.706422, Std: 0.070655
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': None, 'C': 2.0999999999999996}
+  Mean: 0.715596, Std: 0.082791
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': None, 'C': 2.3499999999999996}
 
 9
-  Mean: 0.614679, Std: 0.045951
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': None, 'C': 1.3499999999999999}
+  Mean: 0.706422, Std: 0.095064
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 0.6}
 

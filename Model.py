@@ -5,7 +5,9 @@ from sklearn.metrics import precision_score
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import recall_score
 
+import operator
 import Logger
+import ast
 
 class Model():
   def __init__(self, name, classifier, possibleParams):
@@ -49,7 +51,8 @@ class Model():
           paramDict[param] = 1
       
     self.bestParams = max(paramDict.items(), key=operator.itemgetter(1))[0]
-    looFinalScore["params"] = self.bestParams
+    self.looFinalScore[0]["params"] = self.bestParams
+    self.setParams(ast.literal_eval(self.bestParams))
 
   def getScores(self, predictions, labels, scoreList):
     accuracyScore = accuracy_score(labels, predictions)
@@ -96,6 +99,7 @@ class Model():
 
     self.sortListByItem("accuracy", self.looScores)
     self.getMeanScores(self.looScores, self.looFinalScore)
+    self.setBestParams(self.looScores)
 
   # Tunes params for classifier with Stratified K Fold
   def tune(self, x, y, nSplits):

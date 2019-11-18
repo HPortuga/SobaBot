@@ -16,7 +16,6 @@ from sklearn.metrics import recall_score
 
 import numpy as np
 import pandas as pd
-import operator
 
 from Model import Model
 
@@ -80,8 +79,8 @@ def getDataAndLabels():
 
 if __name__ == "__main__":
   models = [
-    # Model("KNN", KNeighborsClassifier(), paramsKnn),
-    Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
+    Model("KNN", KNeighborsClassifier(), paramsKnn),
+    # Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
     # Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
     # Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
     # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),       # WARNING: Neural Network takes too long!
@@ -94,9 +93,21 @@ if __name__ == "__main__":
     model.setData(x)
     model.setLabels(y)
     
-    print("Training %s... Please be patient as this can take a while.\n" % model.name)
+    print("Training %s... Please be patient as this can take a while." % model.name)
     model.train(nSplits)
     modelScores[model.name] = model.looFinalScore
-    print("Model got accuracy = %.2f;\n\n" % model.looFinalScore["accuracy"])
+    print("Model got accuracy = %.2f;\n" % model.looFinalScore[0]["accuracy"])
 
   bestClassifier = max(modelScores.items())
+
+  for model in models:
+    if (model.name == bestClassifier[0]):
+      chosenClassifier = model
+
+  print("Best score was %.2f from %s" 
+    % (chosenClassifier.looFinalScore[0]["accuracy"], chosenClassifier.name))
+  print("Write a sentence and the bot will predict its intention:")
+  while(True):
+    sentence = input()
+    inst = vectorizer.transform([sentence])
+    print(chosenClassifier.predict(inst))

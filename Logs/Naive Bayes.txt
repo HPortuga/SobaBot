@@ -8,20 +8,20 @@ fit_prior: [True, False]
 The results are:
 
 0
-  Mean: 0.779817, Std: 0.100364
-  Params: {'fit_prior': False, 'alpha': 1.0}
+  Mean: 0.788991, Std: 0.084547
+  Params: {'fit_prior': False, 'alpha': 0.0}
 
 1
   Mean: 0.779817, Std: 0.100364
-  Params: {'fit_prior': False, 'alpha': 1.5}
+  Params: {'fit_prior': False, 'alpha': 0.5}
 
 2
-  Mean: 0.770642, Std: 0.099401
-  Params: {'fit_prior': False, 'alpha': 4.5}
+  Mean: 0.779817, Std: 0.100364
+  Params: {'fit_prior': False, 'alpha': 1.5}
 
 3
-  Mean: 0.770642, Std: 0.099401
-  Params: {'fit_prior': False, 'alpha': 3.0}
+  Mean: 0.779817, Std: 0.100364
+  Params: {'fit_prior': False, 'alpha': 1.0}
 
 4
   Mean: 0.770642, Std: 0.099401
@@ -29,19 +29,19 @@ The results are:
 
 5
   Mean: 0.770642, Std: 0.099401
-  Params: {'fit_prior': False, 'alpha': 4.0}
+  Params: {'fit_prior': False, 'alpha': 4.5}
 
 6
-  Mean: 0.697248, Std: 0.051322
-  Params: {'fit_prior': True, 'alpha': 0.5}
+  Mean: 0.770642, Std: 0.099401
+  Params: {'fit_prior': False, 'alpha': 2.0}
 
 7
-  Mean: 0.348624, Std: 0.048542
-  Params: {'fit_prior': True, 'alpha': 3.0}
+  Mean: 0.403670, Std: 0.053373
+  Params: {'fit_prior': True, 'alpha': 2.0}
 
 8
   Mean: 0.339450, Std: 0.029509
-  Params: {'fit_prior': True, 'alpha': 4.0}
+  Params: {'fit_prior': True, 'alpha': 3.5}
 
 9
   Mean: 0.339450, Std: 0.029509
