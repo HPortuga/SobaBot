@@ -47,7 +47,7 @@ def writeFinalPerformance(scores, algorithm, params):
   log.write("============================\n")
   log.write("The results are:\n\n")
 
-  log.write("  Accuracy: %.2f, Precision: %.2f, Recall: %.2f\n\n" % (score["accuracy"], score["precision"], score["recall"]))
+  log.write("  Accuracy: %.2f, Precision: %.2f, Recall: %.2f\n\n" % (scores[0]["accuracy"], scores[0]["precision"], scores[0]["recall"]))
 
   log.close()
   

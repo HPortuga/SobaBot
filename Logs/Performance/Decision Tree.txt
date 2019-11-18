@@ -1,0 +1,9 @@
+Showing overall performance score for Decision Tree
+============================
+The following parameter got the best result while tuning:
+{'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+============================
+The results are:
+
+  Accuracy: 0.61, Precision: 0.61, Recall: 0.61
+

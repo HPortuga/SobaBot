@@ -1,0 +1,542 @@
+Showing scores for sampling with Leave One Out running Decision TreeThe results are:
+
+0
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+1
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+2
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+3
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+
+4
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+5
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+6
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+7
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+8
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+9
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+10
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+
+11
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+12
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+
+13
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+14
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+15
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+16
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+17
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+18
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+19
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+20
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+21
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+22
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'gini'}
+
+23
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+24
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+25
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+26
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+27
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+28
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+29
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+30
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+31
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+32
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+33
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+34
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+35
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+36
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+37
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+38
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+39
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+40
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+41
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+42
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+
+43
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+44
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+45
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+46
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+47
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+48
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+49
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+50
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+51
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+52
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+53
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+54
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+55
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+56
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+57
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+58
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+59
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+60
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+61
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+62
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+63
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+64
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+65
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+66
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'gini'}
+
+67
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+68
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+
+69
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+70
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+71
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+72
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+73
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+74
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+75
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+76
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+77
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+78
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+79
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+80
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+81
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+82
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+83
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+84
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+85
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+86
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+87
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+88
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+
+89
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+90
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+91
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+92
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+93
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+94
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+95
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+96
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+97
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+98
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+99
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+
+100
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+101
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+102
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+103
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+104
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+105
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+106
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+107
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+108
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+109
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+110
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+111
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+112
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+113
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+114
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+115
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+116
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+117
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+118
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+119
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+120
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+121
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+122
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+123
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+124
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+125
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+126
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+127
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+128
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+129
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+130
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+
+131
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+
+132
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+133
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+134
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+

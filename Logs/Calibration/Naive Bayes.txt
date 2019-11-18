@@ -1,0 +1,48 @@
+Parameter Tuning: Naive Bayes
+============================
+The following parameters were tuned to the algorithm with random search:
+alpha: [0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5]
+fit_prior: [True, False]
+============================
+The results are:
+
+0
+  Acuracy: 0.82, Std: 0.05
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+1
+  Acuracy: 0.78, Std: 0.10
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+2
+  Acuracy: 0.78, Std: 0.10
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+3
+  Acuracy: 0.77, Std: 0.10
+  Params: {'fit_prior': False, 'alpha': 4.5}
+
+4
+  Acuracy: 0.70, Std: 0.05
+  Params: {'fit_prior': True, 'alpha': 0.5}
+
+5
+  Acuracy: 0.60, Std: 0.05
+  Params: {'fit_prior': True, 'alpha': 1.0}
+
+6
+  Acuracy: 0.47, Std: 0.05
+  Params: {'fit_prior': True, 'alpha': 1.5}
+
+7
+  Acuracy: 0.38, Std: 0.06
+  Params: {'fit_prior': True, 'alpha': 2.5}
+
+8
+  Acuracy: 0.35, Std: 0.05
+  Params: {'fit_prior': True, 'alpha': 3.0}
+
+9
+  Acuracy: 0.34, Std: 0.03
+  Params: {'fit_prior': True, 'alpha': 4.0}
+

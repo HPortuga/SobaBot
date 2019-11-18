@@ -1,0 +1,9 @@
+Showing overall performance score for Naive Bayes
+============================
+The following parameter got the best result while tuning:
+{'fit_prior': True, 'alpha': 0.0}
+============================
+The results are:
+
+  Accuracy: 0.86, Precision: 0.86, Recall: 0.86
+

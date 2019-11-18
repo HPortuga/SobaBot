@@ -1,0 +1,542 @@
+Showing scores for sampling with Leave One Out running Naive BayesThe results are:
+
+0
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+1
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+2
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+3
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+4
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+5
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+6
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+7
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+8
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+9
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+10
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+11
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+12
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+13
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+14
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+15
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+16
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+17
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+18
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+19
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+20
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.5}
+
+21
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+22
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 3.0}
+
+23
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 2.0}
+
+24
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+25
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+26
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+27
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+28
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+29
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+30
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+31
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+32
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+33
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+34
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+35
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+36
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+37
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+38
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+39
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+40
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+41
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+42
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+43
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+44
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+45
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+46
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+47
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+48
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+49
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+50
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+51
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+52
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+53
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+54
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+55
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+56
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 4.0}
+
+57
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+58
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 3.0}
+
+59
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+60
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+61
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+62
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+63
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+64
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+65
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 3.0}
+
+66
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+67
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 4.5}
+
+68
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+69
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+70
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 3.0}
+
+71
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+72
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+73
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+74
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+75
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+76
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+77
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+78
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+79
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+80
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+81
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+82
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+83
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 2.5}
+
+84
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+85
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+86
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+87
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+88
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+89
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+90
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+91
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+92
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+93
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+94
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+95
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+96
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+97
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+98
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+99
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+100
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+101
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+102
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+103
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+104
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+105
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+106
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+107
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+108
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+109
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+110
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+111
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 3.0}
+
+112
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+113
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+114
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+115
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+116
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+117
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+118
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+119
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+120
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+121
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+122
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+123
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 3.5}
+
+124
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+125
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+126
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+127
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+128
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+129
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+130
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 1.0}
+
+131
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+
+132
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'fit_prior': False, 'alpha': 0.5}
+
+133
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': False, 'alpha': 0.0}
+
+134
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'fit_prior': True, 'alpha': 0.0}
+

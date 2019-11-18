@@ -1,0 +1,9 @@
+Showing overall performance score for Logistic Regression
+============================
+The following parameter got the best result while tuning:
+{'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+============================
+The results are:
+
+  Accuracy: 0.85, Precision: 0.85, Recall: 0.85
+
