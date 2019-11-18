@@ -80,9 +80,9 @@ def getDataAndLabels():
 if __name__ == "__main__":
   models = [
     Model("KNN", KNeighborsClassifier(), paramsKnn),
-    # Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
-    # Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
-    # Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
+    Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
+    Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
+    Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
     # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),       # WARNING: Neural Network takes too long!
   ]
 

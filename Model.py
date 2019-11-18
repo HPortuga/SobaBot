@@ -100,6 +100,8 @@ class Model():
     self.sortListByItem("accuracy", self.looScores)
     self.getMeanScores(self.looScores, self.looFinalScore)
     self.setBestParams(self.looScores)
+    Logger.writeLooScores(self.looScores, self.name)
+    Logger.writeFinalPerformance(self.looFinalScore, self.name, self.bestParams)
 
   # Tunes params for classifier with Stratified K Fold
   def tune(self, x, y, nSplits):
