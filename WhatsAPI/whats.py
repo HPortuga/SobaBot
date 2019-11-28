@@ -1,4 +1,5 @@
 from selenium import webdriver
+import pdb
 
 def waitForNewMessages():
   calls = webPage.find_elements_by_class_name(NOTIFICATIONFLAG)
@@ -8,11 +9,21 @@ def waitForNewMessages():
 
   return calls
 
+def getLastText():
+  messages = webPage.find_elements_by_class_name(MESSAGEIN)
+  lastMessage = messages.pop()
+  textSpan = lastMessage.find_element_by_class_name(MESSAGESPAN)
+  text = textSpan.find_element_by_tag_name("span").text
+
+  return text
+
 ####
 ##  Configuration
 MSGBOX = "_3u328"
 SENDBUTTON = "_3M-N-"
 NOTIFICATIONFLAG = "P6z4j"
+MESSAGEIN = "message-in"
+MESSAGESPAN = "_F7Vk"
 ##
 ####
 
@@ -22,7 +33,16 @@ webPage.get("https://web.whatsapp.com/")
 input("Digite qualuqer coisa depois de scanear o codigo QR")
 
 calls = waitForNewMessages()
-print("Atendendo...")
+for call in calls:
+  call.click()
+
+  text = getLastText()
+
+  # Ler mensagem
+  # Clicar na caixa de mensagens
+  # Escrever resposta
+  # Enviar
+  # Voltar para o laco
 
 
 
