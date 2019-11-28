@@ -1,0 +1,75 @@
+1574784300478	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeOeGHG"
+1574784301221	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1574784301221	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1574784301222	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1574784301222	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1574784303638	Marionette	INFO	Listening on port 42817
+1574784303687	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 32: TypeError: manifestURI is null
+JavaScript warning: https://web.whatsapp.com/app.231cd5a9b61c9d5b1426.js, line 2: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.231cd5a9b61c9d5b1426.js, line 2: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackground::Msg_MessagePortForceClose Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 4722, Gecko_IOThread] WARNING: pipe error (163): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 4722, Gecko_IOThread] WARNING: pipe error (144): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1574784320769	Marionette	INFO	Stopped listening on port 42817
+1574784322647	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerpEY6o"
+1574784323364	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1574784323364	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1574784323364	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1574784323364	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1574784325781	Marionette	INFO	Listening on port 40889
+1574784325865	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 32: TypeError: manifestURI is null
+JavaScript warning: https://web.whatsapp.com/app.231cd5a9b61c9d5b1426.js, line 2: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.231cd5a9b61c9d5b1426.js, line 2: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 4934, Gecko_IOThread] WARNING: pipe error (89): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 4934, Gecko_IOThread] WARNING: pipe error (100): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1574784378563	Marionette	INFO	Stopped listening on port 40889
+JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 426: Error: OS.File has been shut down. Rejecting post to stat
+1574784937378	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled2lyHY"
+1574784938112	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1574784938112	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1574784938112	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1574784938113	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1574784940588	Marionette	INFO	Listening on port 43993
+1574784940720	Marionette	WARN	TLS certificate errors will be ignored for this session
+1574785008898	Marionette	INFO	Stopped listening on port 43993
+1574965414272	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyF8iiq"
+1574965415317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1574965415317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1574965415317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1574965415317	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+3525
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1574965432232	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyV1ST1"
+1574965432848	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1574965432849	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1574965432849	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1574965432849	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1574965435090	Marionette	INFO	Listening on port 40819
+1574965435143	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 32: TypeError: manifestURI is null
+JavaScript warning: https://web.whatsapp.com/app.fff9477f997fa1246faf.js, line 2: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.fff9477f997fa1246faf.js, line 2: unreachable code after return statement
+[Parent 3716, Gecko_IOThread] WARNING: pipe error (70): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 3716, Gecko_IOThread] WARNING: pipe error (109): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1574965846993	Marionette	INFO	Stopped listening on port 40819
+1574965986429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIox08Y"
+1574965987040	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1574965987040	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1574965987041	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1574965987041	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1574965989167	Marionette	INFO	Listening on port 41197
+1574965989237	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 32: TypeError: manifestURI is null
+JavaScript warning: https://web.whatsapp.com/app.fff9477f997fa1246faf.js, line 2: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.fff9477f997fa1246faf.js, line 2: unreachable code after return statement
