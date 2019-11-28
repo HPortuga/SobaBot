@@ -1,9 +1,9 @@
 Showing overall performance score for KNN
 ============================
 The following parameter got the best result while tuning:
-{'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+{'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 ============================
 The results are:
 
-  Accuracy: 0.80, Precision: 0.80, Recall: 0.80
+  Accuracy: 0.77, Precision: 0.77, Recall: 0.77
 

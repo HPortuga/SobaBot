@@ -201,3 +201,7 @@ console.error: (new Error("Transaction canceled due to a closed connection.", "r
 JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 32: TypeError: manifestURI is null
 JavaScript warning: https://web.whatsapp.com/app.fff9477f997fa1246faf.js, line 2: unreachable code after return statement
 JavaScript warning: https://web.whatsapp.com/app.fff9477f997fa1246faf.js, line 2: unreachable code after return statement
+[Parent 7692, Gecko_IOThread] WARNING: pipe error: Pipe quebrado: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 728
+[Parent 7692, Gecko_IOThread] WARNING: pipe error (131): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+[Parent 7692, Gecko_IOThread] WARNING: pipe error (99): Conexão fechada pela outra ponta: file /build/firefox-cfmLQt/firefox-70.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1574969958093	Marionette	INFO	Stopped listening on port 45675

@@ -77,12 +77,12 @@ def getDataAndLabels():
 
   return (x,y)
 
-if __name__ == "__main__":
+def findBestModel():
   models = [
     Model("KNN", KNeighborsClassifier(), paramsKnn),
-    Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
-    Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
-    Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
+    # Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
+    # Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
+    # Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
     # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),       # WARNING: Neural Network takes too long!
   ]
 
@@ -102,12 +102,4 @@ if __name__ == "__main__":
 
   for model in models:
     if (model.name == bestClassifier[0]):
-      chosenClassifier = model
-
-  print("Best score was %.2f from %s" 
-    % (chosenClassifier.looFinalScore[0]["accuracy"], chosenClassifier.name))
-  print("Write a sentence and the bot will predict its intention:")
-  while(True):
-    sentence = input()
-    inst = vectorizer.transform([sentence])
-    print(chosenClassifier.predict(inst))
+      return model

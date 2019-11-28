@@ -1,22 +1,6 @@
 from selenium import webdriver
 import pdb
 
-def waitForNewMessages():
-  calls = webPage.find_elements_by_class_name(NOTIFICATIONFLAG)
-
-  while(len(calls) == 0):
-    calls = webPage.find_elements_by_class_name(NOTIFICATIONFLAG)
-
-  return calls
-
-def getLastText():
-  messages = webPage.find_elements_by_class_name(MESSAGEIN)
-  lastMessage = messages.pop()
-  textSpan = lastMessage.find_element_by_class_name(MESSAGESPAN)
-  text = textSpan.find_element_by_tag_name("span").text
-
-  return text
-
 ####
 ##  Configuration
 MSGBOX = "_3u328"
@@ -27,40 +11,38 @@ MESSAGESPAN = "_F7Vk"
 ##
 ####
 
-webPage = webdriver.Firefox()
-webPage.get("https://web.whatsapp.com/")
+class Whats():
+  def __init__(self):
+    self.page = webdriver.Firefox()
+    self.page.get("https://web.whatsapp.com/")
+    input("Digite qualquer coisa depois de scanear o codigo QR")
 
-input("Digite qualuqer coisa depois de scanear o codigo QR")
+  def waitForNewMessages(self):
+    calls = self.page.find_elements_by_class_name(NOTIFICATIONFLAG)
 
-calls = waitForNewMessages()
-for call in calls:
-  call.click()
+    while(len(calls) == 0):
+      calls = self.page.find_elements_by_class_name(NOTIFICATIONFLAG)
 
-  text = getLastText()
+    return calls
 
-  # Ler mensagem
-  # Clicar na caixa de mensagens
-  # Escrever resposta
-  # Enviar
-  # Voltar para o laco
+  def getLastText(self):
+    messages = self.page.find_elements_by_class_name(MESSAGEIN)
+    lastMessage = messages.pop()
+    textSpan = lastMessage.find_element_by_class_name(MESSAGESPAN)
+    text = textSpan.find_element_by_tag_name("span").text
 
+    return text
 
+  def run(self):
+    calls = self.waitForNewMessages()
+    for call in calls:
+      call.click()
+      text = self.getLastText()
+      return (call,text)
 
-
-
-
-# name = input("Digitar nome de usuario ou grupo : ")
-# msg = input("Digite sua mensagem : ")
-# count = int(input("Digite o count : "))
-
-# input("Digite qualuqer coisa depois de scanear o codigo QR")
-
-# user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
-# user.click()
-
-# msgBox = driver.find_element_by_class_name("_3u328")
-
-# for i in range(count):
-#   msgBox.send_keys(msg)
-#   button = driver.find_element_by_class_name("_3M-N-")
-#   button.click()
+  def answer(self, call, answer):
+    call.click()
+    msgBox = self.page.find_element_by_class_name(MSGBOX)
+    msgBox.send_keys(answer)
+    button = self.page.find_element_by_class_name(SENDBUTTON)
+    button.click()
