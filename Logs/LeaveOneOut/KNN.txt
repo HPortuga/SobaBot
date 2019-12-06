@@ -2,39 +2,39 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 0
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 1
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 2
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 3
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 4
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
 
 5
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
 
 6
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 7
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 8
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 9
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -42,75 +42,75 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 10
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 11
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 12
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 13
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 14
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 15
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 16
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 17
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 18
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 19
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 20
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 21
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 22
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 23
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 24
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 25
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 26
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 27
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 28
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -118,15 +118,15 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 29
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 30
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 31
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 32
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -134,27 +134,27 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 33
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 34
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 35
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 36
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 37
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 38
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 39
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -162,39 +162,39 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 40
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 41
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'weights': 'distance', 'n_neighbors': 7, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 42
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 43
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 44
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 5, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 45
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 46
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 47
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 48
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 49
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -202,31 +202,31 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 50
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 51
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 52
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 53
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 54
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 55
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 56
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 57
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -234,7 +234,7 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 58
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 59
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -242,35 +242,35 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 60
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 61
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 62
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 63
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 64
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
 
 65
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 66
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 67
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 68
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -278,15 +278,15 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 69
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 70
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 71
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 72
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -294,103 +294,103 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 73
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 74
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 75
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 76
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 77
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 78
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 79
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 80
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 81
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 82
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
 
 83
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 84
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 85
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 86
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 87
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 88
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 89
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 90
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
 
 91
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 92
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 93
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 94
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 95
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 96
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 97
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 98
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -398,145 +398,145 @@ Showing scores for sampling with Leave One Out running KNNThe results are:
 
 99
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 100
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 101
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 102
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 103
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 104
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 105
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 106
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 107
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
 
 108
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 109
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 110
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 111
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 112
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 113
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 114
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 115
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 5, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
 
 116
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 117
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 118
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'euclidean', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 119
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 120
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 121
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 122
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 123
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 124
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 125
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 126
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 127
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
 
 128
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 129
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
 
 130
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
+  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'brute'}
 
 131
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'euclidean', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 132
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 133
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'ball_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'brute'}
 
 134
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'weights': 'uniform', 'n_neighbors': 1, 'metric': 'manhattan', 'algorithm': 'kd_tree'}
+  Params: {'weights': 'distance', 'n_neighbors': 3, 'metric': 'manhattan', 'algorithm': 'brute'}
 

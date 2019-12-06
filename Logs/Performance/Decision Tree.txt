@@ -5,5 +5,5 @@ The following parameter got the best result while tuning:
 ============================
 The results are:
 
-  Accuracy: 0.61, Precision: 0.61, Recall: 0.61
+  Accuracy: 0.64, Precision: 0.64, Recall: 0.64
 

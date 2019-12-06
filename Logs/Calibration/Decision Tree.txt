@@ -8,42 +8,42 @@ max_depth: [None, 2, 4, 8, 16]
 The results are:
 
 0
-  Acuracy: 0.56, Std: 0.11
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
-
-1
-  Acuracy: 0.56, Std: 0.09
+  Acuracy: 0.61, Std: 0.07
   Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
+1
+  Acuracy: 0.56, Std: 0.05
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
 2
-  Acuracy: 0.52, Std: 0.06
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'gini'}
+  Acuracy: 0.55, Std: 0.14
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 3
-  Acuracy: 0.48, Std: 0.10
-  Params: {'splitter': 'random', 'max_depth': 8, 'criterion': 'entropy'}
+  Acuracy: 0.53, Std: 0.06
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
 
 4
-  Acuracy: 0.47, Std: 0.07
-  Params: {'splitter': 'best', 'max_depth': 8, 'criterion': 'gini'}
+  Acuracy: 0.46, Std: 0.04
+  Params: {'splitter': 'random', 'max_depth': 8, 'criterion': 'entropy'}
 
 5
-  Acuracy: 0.46, Std: 0.07
-  Params: {'splitter': 'random', 'max_depth': 8, 'criterion': 'gini'}
+  Acuracy: 0.45, Std: 0.08
+  Params: {'splitter': 'best', 'max_depth': 8, 'criterion': 'entropy'}
 
 6
+  Acuracy: 0.40, Std: 0.08
+  Params: {'splitter': 'random', 'max_depth': 4, 'criterion': 'entropy'}
+
+7
+  Acuracy: 0.39, Std: 0.07
+  Params: {'splitter': 'best', 'max_depth': 4, 'criterion': 'gini'}
+
+8
   Acuracy: 0.39, Std: 0.07
   Params: {'splitter': 'best', 'max_depth': 4, 'criterion': 'entropy'}
 
-7
-  Acuracy: 0.35, Std: 0.07
-  Params: {'splitter': 'random', 'max_depth': 2, 'criterion': 'gini'}
-
-8
-  Acuracy: 0.34, Std: 0.08
-  Params: {'splitter': 'best', 'max_depth': 2, 'criterion': 'entropy'}
-
 9
-  Acuracy: 0.33, Std: 0.07
-  Params: {'splitter': 'best', 'max_depth': 2, 'criterion': 'gini'}
+  Acuracy: 0.36, Std: 0.09
+  Params: {'splitter': 'random', 'max_depth': 2, 'criterion': 'entropy'}
 

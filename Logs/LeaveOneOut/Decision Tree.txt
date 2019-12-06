@@ -2,7 +2,7 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 0
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 1
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -13,112 +13,112 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
   Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 3
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 4
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 5
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 6
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 7
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 8
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 9
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 10
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 11
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
   Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 12
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 13
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
   Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 14
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'gini'}
 
 15
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 16
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
 
 17
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 18
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 19
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
 
 20
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 21
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 22
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 23
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 24
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 25
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 26
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 27
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 28
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 29
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
 
 30
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -126,11 +126,11 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 31
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 32
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
 
 33
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -138,11 +138,11 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 34
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 35
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 36
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -154,15 +154,15 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 38
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 39
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 40
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 41
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -170,39 +170,39 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 42
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 43
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
 
 44
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
-
-45
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
-
-46
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
-
-47
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
-
-48
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
   Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
-49
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+45
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
   Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+
+46
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+
+47
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+
+48
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+
+49
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 50
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 51
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -210,19 +210,19 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 52
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 53
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 54
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 55
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
 
 56
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -230,15 +230,15 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 57
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'gini'}
 
 58
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 59
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 60
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -250,11 +250,11 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 62
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 63
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 64
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -266,34 +266,34 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 66
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 67
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 68
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 69
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 70
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 71
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 72
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
   Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 73
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
   Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 74
@@ -306,7 +306,7 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 76
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 77
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -318,7 +318,7 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 79
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 80
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -326,43 +326,43 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 81
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 82
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 83
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 84
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 85
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 86
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 87
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 88
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 89
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 90
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
 
 91
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -374,39 +374,39 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 93
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 94
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 95
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 96
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 97
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 98
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
 
 99
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 100
-  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 101
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 102
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -414,23 +414,23 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 103
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 104
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 105
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 106
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 107
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 108
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -438,7 +438,7 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 109
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 110
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -446,11 +446,11 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 111
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 112
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 113
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -458,11 +458,11 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 114
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 115
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 116
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
@@ -470,27 +470,27 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 117
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 118
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 119
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'entropy'}
 
 120
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 121
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 122
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 123
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -498,19 +498,19 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 124
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 125
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 126
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 127
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': 16, 'criterion': 'entropy'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'entropy'}
 
 128
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
@@ -522,21 +522,21 @@ Showing scores for sampling with Leave One Out running Decision TreeThe results 
 
 130
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
 
 131
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': 16, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 132
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
   Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 
 133
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'gini'}
 
 134
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'splitter': 'random', 'max_depth': None, 'criterion': 'gini'}
+  Params: {'splitter': 'best', 'max_depth': None, 'criterion': 'entropy'}
 

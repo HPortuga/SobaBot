@@ -4,7 +4,7 @@ import classificadores
 from WhatsAPI.whats import Whats
 
 if __name__ == "__main__":
-    # chosenClassifier = classificadores.findBestModel()
+    chosenClassifier = classificadores.findBestModel()
     # print("Best score was %.2f from %s" 
     #   % (chosenClassifier.looFinalScore[0]["accuracy"], chosenClassifier.name))
 

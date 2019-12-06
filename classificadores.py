@@ -13,6 +13,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import precision_score
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import recall_score
+from sklearn.externals import joblib
 
 import numpy as np
 import pandas as pd
@@ -25,6 +26,9 @@ vectorizer = TfidfVectorizer(sublinear_tf=True,
 
 # TODO: this has to be dynamic
 nSplits = 5
+
+### Saved data from training
+file = "modelSave.sav"
 
 ### Classifier Params
 paramsKnn = {
@@ -78,28 +82,36 @@ def getDataAndLabels():
   return (x,y)
 
 def findBestModel():
-  models = [
-    Model("KNN", KNeighborsClassifier(), paramsKnn),
-    # Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
-    # Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
-    # Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
-    # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),       # WARNING: Neural Network takes too long!
-  ]
+  # Try to load model's past training
+  try:
+    loadedModel = joblib.load(file)
+    print("Trained model found. Loading data...\n")
+    return loadedModel
 
-  modelScores = dict()
-  x, y = getDataAndLabels()
+  except FileNotFoundError:
+    models = [
+      Model("KNN", KNeighborsClassifier(), paramsKnn),
+      Model("Decision Tree", DecisionTreeClassifier(), paramsDecisionTree),
+      Model("Naive Bayes", MultinomialNB(), paramsNaiveBayes),
+      Model("Logistic Regression", LogisticRegression(), paramsLogisticReg),
+      # Model("Neural Network", MLPClassifier(), paramsNeuralNetwork),       # WARNING: Neural Network takes too long!
+    ]
 
-  for model in models:
-    model.setData(x)
-    model.setLabels(y)
-    
-    print("Training %s... Please be patient as this can take a while." % model.name)
-    model.train(nSplits)
-    modelScores[model.name] = model.looFinalScore
-    print("Model got accuracy = %.2f;\n" % model.looFinalScore[0]["accuracy"])
+    modelScores = dict()
+    x, y = getDataAndLabels()
 
-  bestClassifier = max(modelScores.items())
+    for model in models:
+      model.setData(x)
+      model.setLabels(y)
+      
+      print("Training %s... Please be patient as this can take a while." % model.name)
+      model.train(nSplits)
+      modelScores[model.name] = model.looFinalScore
+      print("Model got accuracy = %.2f;\n" % model.looFinalScore[0]["accuracy"])
 
-  for model in models:
-    if (model.name == bestClassifier[0]):
-      return model
+    bestClassifier = max(modelScores.items())
+
+    for model in models:
+      if (model.name == bestClassifier[0]):
+        joblib.dump(model, file)
+        return model

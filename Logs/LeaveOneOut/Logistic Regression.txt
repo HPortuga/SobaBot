@@ -2,541 +2,541 @@ Showing scores for sampling with Leave One Out running Logistic RegressionThe re
 
 0
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 1
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 2
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 3
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 4
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 5
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 6
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 7
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 8
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 9
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 10
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 11
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 12
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 13
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 14
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 15
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 16
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 1.3499999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 17
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 1.3499999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 18
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 19
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 1.3499999999999999}
 
 20
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 21
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 22
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 1.5999999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 1.3499999999999999}
 
 23
-  Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Accuracy: 1.00, Precision: 1.00, Recall: 1.00
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 24
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 25
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 1.8499999999999999}
 
 26
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 27
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 28
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 29
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 30
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 31
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 32
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 33
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 34
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 35
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 36
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 37
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 38
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 39
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 40
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 41
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 42
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 43
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 44
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 45
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 46
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 47
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 48
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 49
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 50
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 51
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 52
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 1.3499999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 53
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
 
 54
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 1.8499999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 55
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 56
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 57
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 58
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 59
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 60
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 61
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 62
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 63
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 64
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 65
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 66
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 67
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
 
 68
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 69
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
 
 70
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 71
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 72
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 73
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 74
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 75
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.0999999999999996}
 
 76
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': None, 'C': 4.349999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 77
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 78
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 79
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.0999999999999996}
 
 80
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 81
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 82
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 83
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 84
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
 
 85
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 86
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 87
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 88
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 89
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 90
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 91
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 92
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 93
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 94
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 95
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 96
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 97
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 98
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 99
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 100
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
 
 101
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.8499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 102
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 103
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
 
 104
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 105
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 106
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 107
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 108
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 109
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 110
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 111
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 112
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
 
 113
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 114
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
 
 115
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.0999999999999996}
 
 116
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.599999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 0.35}
 
 117
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 118
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 119
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 120
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 121
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 122
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 3.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
 
 123
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.3499999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
 124
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 125
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
+  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.1}
 
 126
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.0999999999999996}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 127
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': False, 'class_weight': 'balanced', 'C': 4.349999999999999}
+  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 2.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
 
 128
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 1e-05, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 1e-05, 'multi_class': 'auto', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.5999999999999996}
 
 129
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 0.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.1}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 2.0999999999999996}
 
 130
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 4.349999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 3.8499999999999996}
 
 131
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 1.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.8499999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 132
   Accuracy: 1.00, Precision: 1.00, Recall: 1.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 4.849999999999999}
+  Params: {'tol': 0.0001, 'multi_class': 'auto', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 3.5999999999999996}
 
 133
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.0001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 3.5999999999999996}
+  Params: {'tol': 0.001, 'multi_class': 'auto', 'intercept_scaling': 2.6, 'fit_intercept': False, 'dual': False, 'class_weight': 'balanced', 'C': 2.0999999999999996}
 
 134
   Accuracy: 0.00, Precision: 0.00, Recall: 0.00
-  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 0.6, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 1.8499999999999999}
+  Params: {'tol': 0.001, 'multi_class': 'ovr', 'intercept_scaling': 1.1, 'fit_intercept': False, 'dual': True, 'class_weight': 'balanced', 'C': 2.8499999999999996}
 
