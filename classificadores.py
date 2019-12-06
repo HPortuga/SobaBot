@@ -83,8 +83,11 @@ def getDataAndLabels():
 
 def findBestModel():
   # Try to load model's past training
+  x, y = getDataAndLabels()
+
   try:
     loadedModel = joblib.load(file)
+    loadedModel.fit(x, y)
     print("Trained model found. Loading data...\n")
     return loadedModel
 
@@ -98,7 +101,6 @@ def findBestModel():
     ]
 
     modelScores = dict()
-    x, y = getDataAndLabels()
 
     for model in models:
       model.setData(x)
