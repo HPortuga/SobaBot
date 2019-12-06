@@ -52,7 +52,7 @@ class Whats():
     try:
       call.click()
     except exceptions.StaleElementReferenceException:
-      pass
+      return
 
     msgBox = self.page.find_element_by_class_name(MSGBOX)
     msgBox.send_keys(answer)
