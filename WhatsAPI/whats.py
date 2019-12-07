@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.common import exceptions
+from selenium.webdriver.common.keys import Keys
 import pdb
 
 ####
@@ -55,6 +56,9 @@ class Whats():
       return
 
     msgBox = self.page.find_element_by_class_name(MSGBOX)
-    msgBox.send_keys(answer)
+    resp = answer.split("\n")
+    for r in resp:
+      msgBox.send_keys(r)
+      msgBox.send_keys(Keys.SHIFT, Keys.ENTER)
     button = self.page.find_element_by_class_name(SENDBUTTON)
     button.click()

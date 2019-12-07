@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from WhatsAPI.whats import Whats
 import classificadores
@@ -38,20 +40,49 @@ if __name__ == "__main__":
   print("Best score was %.2f from %s\n" 
     % (chosenClassifier.looFinalScore[0]["accuracy"], chosenClassifier.name))
 
-  reconhecido = etiquetador(entidades, "Me ve um soba")
-  print(reconhecido)
 
-  # whats = Whats()
+  whats = Whats()
 
-  # while(True):
-  #   # pdb.set_trace()
-  #   call, text = whats.waitForNewMessage()
+  lastState = ""
+  while(True):
+    # pdb.set_trace()
+    call, text = whats.waitForNewMessage()
 
-  #   if (text != "" and call != None):
-  #     vec = classificadores.vectorizer
-  #     prediction = chosenClassifier.predict(vec.transform([text]))[0]
-  #     whats.answer(call, prediction)
-  #     time.sleep(0.75)
+    if (text != "" and call != None):
+      vec = classificadores.vectorizer
+      prediction = chosenClassifier.predict(vec.transform([text]))[0]
 
-  #   call = None
-  #   text = ""
+      if (lastState == "" and prediction == "saudacao"):
+        answer = "Boa noite! Bem vindo à sobaria do Ninja. Como posso ajudar?"
+        whats.answer(call, answer)
+        lastState = "saudacao"
+
+      elif (prediction == "cardapio"):
+        answer = "Trabalhamos com os seguintes itens:\n"
+        answer += "- Sobás:\n"
+        answer += " Sobá G Bovino - R$19.99\n"
+        answer += " Sobá M Bovino - R$18.00\n"
+        answer += " Sobá P Bovino - R$15.00\n"
+        answer += " Sobá G de Frango - R$19.99\n"
+        answer += " Sobá M de Frango - R$18.00\n"
+        answer += " Sobá P de Frango - R$15.00\n"
+        answer += "- Bebidas:\n"
+        answer += " Água sem Gás - R$3.00\n"
+        answer += " Água com Gás - R$3.00\n"
+        answer += " Fanta Laranja lata - R$5.00\n"
+        answer += " Coca-Cola lata - R$5.00\n"
+        answer += " Suco Del Valle Pêssego lata - R$5.00\n"
+        answer += " Suco Del Valle Uva lata - R$5.00\n"
+        answer += "- Adicionais\n"
+        answer += " Bovino 100g - R$10.00\n"
+        answer += " Frango 100g - R$8.00\n"
+        answer += " Cebolinha - R$3.00\n"
+        answer += " Omelete - R$3.00\n"
+
+        whats.answer(call, answer)
+        lastState = "cardapio"
+
+      time.sleep(0.75)
+
+    call = None
+    text = ""
