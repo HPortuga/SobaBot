@@ -50,10 +50,10 @@ class Whats():
     return (call,text)
 
   def answer(self, call, answer):
-    try:
-      call.click()
-    except exceptions.StaleElementReferenceException:
-      return
+    # try:
+    #   call.click()
+    # except exceptions.StaleElementReferenceException:
+    #   return
 
     msgBox = self.page.find_element_by_class_name(MSGBOX)
     resp = answer.split("\n")

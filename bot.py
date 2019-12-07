@@ -5,32 +5,30 @@ from WhatsAPI.whats import Whats
 import classificadores
 import time
 import pdb
+import estruturas
 
 def etiquetador(dicionario, frase):
-  reconhecido = dict()
+  reconhecido = list()
 
+  frase = frase.replace(",", "")
   palavras = frase.split(" ")
 
-  for key, value in dicionario.items():
-    for palavra in palavras:
+  for palavra in palavras:
+    for key, value in dicionario.items():
       if (palavra in value):
-        reconhecido[key] = palavra
+        reconhecido.append(str(key + " " + palavra))
 
   return reconhecido
 
 if __name__ == "__main__":
   entidades = {
-    "num": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "um", "uma", "dois", "duas",
-            "tres", "quatro", "cinco", "seis", "sete", "oito", "nove"],
+    "numInt": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+    "numStr": ["um", "uma", "dois", "duas", "tres", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"],
     "tam": ["g", "grande", "grandes", "m", "medio", "medios", "p", "pequeno", "pequenos"],
     "prato": ["soba", "sobas"],
     "tipo": ["bovino", "carne", "boi", "vaca", "frango", "galinha"],
-    "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete"],
-    "detalhe": ["coloca", "colocar", "tira", "tirar", "com", "sem"],
-    "bebidas": ["agua", "aguas", "com gas", "sem gas", "normal", "gaseificada", "suco",
-                "sucos", "pessego", "uva", "coca", "cocas", "coca cola", "coca-cola",
-                "cocas colas", "cocas cola", "colas", "fanta", "fanta laranja", "fantas",
-                "refrigerante", "refrigerantes", "lata", "latas"]
+    "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete", "adicional"],
+    "bebidas": ["agua", "aguas", "água", "águas"]
   }
 
   vectorizer = TfidfVectorizer(sublinear_tf=True,
@@ -43,7 +41,6 @@ if __name__ == "__main__":
 
   whats = Whats()
 
-  lastState = ""
   while(True):
     # pdb.set_trace()
     call, text = whats.waitForNewMessage()
@@ -52,10 +49,8 @@ if __name__ == "__main__":
       vec = classificadores.vectorizer
       prediction = chosenClassifier.predict(vec.transform([text]))[0]
 
-      if (lastState == "" and prediction == "saudacao"):
+      if (prediction == "saudacao"):
         answer = "Boa noite! Bem vindo à sobaria do Ninja. Como posso ajudar?"
-        whats.answer(call, answer)
-        lastState = "saudacao"
 
       elif (prediction == "cardapio"):
         answer = "Trabalhamos com os seguintes itens:\n"
@@ -79,8 +74,30 @@ if __name__ == "__main__":
         answer += " Cebolinha - R$3.00\n"
         answer += " Omelete - R$3.00\n"
 
-        whats.answer(call, answer)
-        lastState = "cardapio"
+      elif (prediction == "pedido"):
+        ents = etiquetador(entidades, text)
+        print(ents)
+
+        answer = estruturas.montarPedido(ents)
+
+        # total = 0
+        # mult = 0
+
+        # for ent in ents:
+        #   par = ent.split(" ")
+
+        #   if (par[0] == "num"):
+        #     mult = estruturas.intToStr(par[1])
+
+        #   if (par[0] == "bebidas"):
+        #     total += mult * estruturas.bebidas
+
+        # answer = str(total)
+              
+      else:
+        continue
+
+      whats.answer(call, answer)
 
       time.sleep(0.75)
 
