@@ -30,6 +30,9 @@ def strToInt(numStr):
 def isCoca(coca):
   return coca == "coca" or coca == "cocas" or coca == "coca-cola"
 
+def isFanta(fanta):
+  return fanta == "fanta" or fanta == "fantas"
+
 def isRefri(ref):
   return ref in refri
 
@@ -72,10 +75,11 @@ def montarPedido(tokens):
 
   pos = 0
   
-  pdb.set_trace()
+  # pdb.set_trace()
 
   while (True):
     if (pos == len(pares)):
+      pdb.set_trace()
       print("Cheguei no final")
       return pedido
     
@@ -166,7 +170,7 @@ def montarPedido(tokens):
       if (isCoca(current[1])):
         try:
           nextToken = pares[pos+1]
-          if (nextToken[1] == "cola" or nextToken[1] == "colas"):
+          if (nextToken[1] == "cola" or nextToken[1] == "colas" or nextToken[1] == "lata"):
             pos += 2
           else:
             pos += 1
@@ -175,12 +179,25 @@ def montarPedido(tokens):
         
         pedido.append((quantidade, "coca"))
         state = 0
-        
+
+      elif (isFanta(current[1])):
+        try:
+          nextToken = pares[pos+1]
+          if (nextToken[1] == "lata"):
+            pos += 2
+          else:
+            pos += 1
+        except IndexError:
+          pos += 1
+
+        pedido.append((quantidade, "fanta"))
+        state = 0
+    
     elif (state == 8): # Suco
       pass
     
     elif (state == -1): 
       return naoEntendi()
 
-montarPedido(['numStr uma', 'bebidas coca', 'bebidas cola'])
+montarPedido(['numStr uma', 'bebidas fanta', 'bebidas lata'])
 
