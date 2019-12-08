@@ -9,7 +9,7 @@ entidades = {
   "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete", "adicional"],
   "bebidas": ["agua", "aguas", "água", "águas", "coca", "fanta", "suco"],
   "detalhe": ["com", "sem"],
-  "tipoAgua": ["gas", "gaseificada", "normal"]
+  "tipoAgua": ["gas", "gaseificada", "normal", "natural"]
 }
 
 agua = ["agua", "aguas", "água", "águas"]
@@ -24,6 +24,12 @@ def strToInt(numStr):
     return 3
   if (numStr == "4" or numStr == "quatro"):
     return 4
+
+def isDetalhe(det):
+  return det in entidades["detalhe"]
+
+def isTipoAgua(tipo):
+  return tipo in entidades["tipoAgua"]
 
 def isNum(num):
   return num == "numInt" or num == "numStr"
@@ -82,9 +88,59 @@ def montarPedido(tokens):
       except IndexError:
         pedido.append((quantidade, current[1]))
         pos += 1
+        state = 0
+        continue
+
+      if (not isDetalhe(nextToken[1]) and not isTipoAgua(nextToken[1])):
+        pedido.append((quantidade, current[1]))
+        pos += 1
+        state = 0
+
+      else:
+        if (nextToken[1] == "com"):
+          state = 4
+        elif (nextToken[1] == "sem"):
+          state = 5
+        pos += 1
+
+    elif (state == 4):  # Agua com Gas
+      if (current[1] == "gaseificada"):
+        pedido.append((quantidade, "agua com gas"))
+        pos += 1
+        state = 0
+
+      elif (current[1] == "com"):
+        try:
+          nextToken = pares[pos+1]
+          if (nextToken[1] == "gas"):
+            pedido.append((quantidade, "agua com gas"))
+            pos += 2
+            state = 0
+
+        except IndexError:
+          state = -1
+          continue
+
+    elif (state == 5):  # Agua sem Gas
+      if (current[1] == "natural" or current[1] == "normal"):
+        pedido.append((quantidade, "agua"))
+        pos += 1
+        state = 0
+
+      elif (current[1] == "sem"):
+        try:
+          nextToken = pares[pos+1]
+          if (nextToken[1] == "gas"):
+            pedido.append((quantidade, "agua"))
+            pos += 2
+            state = 0
         
+        except IndexError:
+          state = -1
+          continue
+
     elif (state == -1): 
       return naoEntendi()
 
-montarPedido(['numStr uma', 'bebidas agua'])
+montarPedido(['numStr uma', 'bebidas agua', 'detalhe com', 'tipoAgua gas', 'numInt 2', 'bebidas aguas'])
 
