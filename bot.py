@@ -32,12 +32,19 @@ if __name__ == "__main__":
   whats = Whats()
 
   while(True):
-    # pdb.set_trace()
     call, text = whats.waitForNewMessage()
 
     if (text != "" and call != None):
+      text = text.lower()
       vec = classificadores.vectorizer
-      prediction = chosenClassifier.predict(vec.transform([text]))[0]
+
+      # pdb.set_trace()
+
+      if (text == "sim"):
+        answer = "Ok! Precisamos do seu endereco agora"
+        prediction = "endereco"
+      else :
+        prediction = chosenClassifier.predict(vec.transform([text]))[0]
 
       if (prediction == "saudacao"):
         answer = "Boa noite! Bem vindo à sobaria do Ninja. Como posso ajudar?"
@@ -67,10 +74,19 @@ if __name__ == "__main__":
       elif (prediction == "pedido"):
         ents = etiquetador(estruturas.entidades, text)
 
-        answer = str(estruturas.montarPedido(ents))
-              
+        order = estruturas.montarPedido(ents)
+
+        if (order != estruturas.naoEntendi()):
+          answer = estruturas.confirmarPedido(order)
+        else:
+          answer = order
+      
+      elif (prediction == "endereco"):  # TODO
+        pass
+
       else:
         continue
+
       whats.answer(call, answer)
 
       time.sleep(0.75)

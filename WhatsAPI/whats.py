@@ -22,11 +22,15 @@ class Whats():
   def getLastText(self):
     messages = self.page.find_elements_by_class_name(MESSAGEIN)
     lastMessage = messages.pop()
-    textSpan = lastMessage.find_element_by_class_name(MESSAGESPAN)
+
+    try:
+      textSpan = lastMessage.find_element_by_class_name(MESSAGESPAN)
+    except (exceptions.NoSuchElementException, exceptions.StaleElementReferenceException):
+      pass
 
     try:
       text = textSpan.find_element_by_tag_name("span").text
-    except exceptions.NoSuchElementException:
+    except (exceptions.NoSuchElementException, exceptions.StaleElementReferenceException):
       text = ""
 
     return text
@@ -42,7 +46,8 @@ class Whats():
 
     try:
       call.click()
-    except exceptions.StaleElementReferenceException:
+    except (exceptions.StaleElementReferenceException,
+      exceptions.ElementClickInterceptedException):
       call = None
 
     text = self.getLastText()

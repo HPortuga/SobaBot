@@ -1,10 +1,29 @@
 import pdb
 
+precos = {
+  "SGB": 19.99,
+  "SMB": 18.00,
+  "SPB": 15.00,
+  "SGF": 19.99,
+  "SMF": 18.00,
+  "SPF": 15.00,
+  "ASG": 3.00,
+  "ACG": 3.00,
+  "FAN": 5.00,
+  "COC": 5.00,
+  "UVA": 5.00,
+  "PES": 5.00,
+  "AB": 10.00,
+  "AF": 10.00,
+  "AC": 3.00,
+  "AO": 3.00
+}
+
 entidades = {
   "numInt": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
   "numStr": ["um", "uma", "dois", "duas", "tres", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"],
   "tam": ["g", "grande", "grandes", "m", "medio", "medios", "p", "pequeno", "pequenos"],
-  "prato": ["soba", "sobas"],
+  "prato": ["soba", "sobas", "sobá", "sobás"],
   "tipo": ["bovino", "frango"],
   "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete", "adicional"],
   "bebidas": ["agua", "aguas", "água", "águas", "coca", "coca-cola", "cocas", "fanta", "fantas", "suco", "sucos", "uva", "pessego", "pêssego"],
@@ -70,6 +89,54 @@ def isPrato(prato):
 def naoEntendi():
   return "Nao entendi"
 
+def confirmarPedido(pedidos):
+  
+  total = 0
+  msg = "Por favor, confirme o pedido com 'sim' ou, se estiver incorreto, basta pedir novamente. Tente ser bem claro\n\n"
+
+  for pedido in pedidos:
+    quantidade = int(pedido[0])
+
+    if (pedido[1] == "agua"):
+      total += quantidade * precos["ASG"]
+    elif (pedido[1] == "agua com gas"):
+      total += quantidade * precos["ACG"]
+    elif (pedido[1] == "fanta"):
+      total += quantidade * precos["FAN"]
+    elif (pedido[1] == "coca"):
+      total += quantidade * precos["COC"]
+    elif (pedido[1] == "suco uva"):
+      total += quantidade * precos["UVA"]
+    elif (pedido[1] == "suco pessego" or pedido[1] == "suco pêssego"):
+      total += quantidade * precos["PES"]
+    elif (pedido[1] == "adicional bovino"):
+      total += quantidade * precos["AB"]
+    elif (pedido[1] == "adicional frango"):
+      total += quantidade * precos["AF"]
+    elif (pedido[1] == "adicional cebolinha"):
+      total += quantidade * precos["AC"]
+    elif (pedido[1] == "adicional omelete"):
+      total += quantidade * precos["AO"]
+    elif (pedido[1] == "soba g bovino" or pedido[1] == "soba grande bovino" or pedido[1] == "soba grandes bovino"):
+      total += quantidade * precos["SGB"]
+    elif (pedido[1] == "soba m bovino" or pedido[1] == "soba medio bovino" or pedido[1] == "soba medios bovino"):
+      total += quantidade * precos["SMB"]
+    elif (pedido[1] == "soba p bovino" or pedido[1] == "soba pequeno bovino" or pedido[1] == "soba pequenos bovino"):
+      total += quantidade * precos["SPB"]
+    elif (pedido[1] == "soba g frango" or pedido[1] == "soba grandes frango" or pedido[1] == "soba grande frango"):
+      total += quantidade * precos["SGF"]
+    elif (pedido[1] == "soba m frango" or pedido[1] == "soba medio frango" or pedido[1] == "soba medios frango"):
+      total += quantidade * precos["SMF"]
+    elif (pedido[1] == "soba p frango" or pedido[1] == "soba pequeno frango" or pedido[1] == "soba pequenos frango"):
+      total += quantidade * precos["SPF"]
+
+    msg += str(pedido[0]) + " " + pedido[1] + "\n"
+
+  msg += "\nTotal: %0.2f" % total
+
+  return msg
+    
+
 def montarPedido(tokens):
   pos = 0
   state = 0
@@ -86,9 +153,16 @@ def montarPedido(tokens):
   
   while (True):
     if (pos == len(pares)):
-      return pedido
+      if (len(pedido) > 0):
+        return pedido
+      else:
+        state = -1
     
-    current = pares[pos]
+    try:
+      current = pares[pos]
+    except IndexError:
+      state = -1
+
     if (state == 0):  # Pedido
       if (isNum(current[0])):
         state = 1
@@ -114,13 +188,13 @@ def montarPedido(tokens):
       try:
         nextToken = pares[pos+1]
       except IndexError:
-        pedido.append((quantidade, current[1]))
+        pedido.append((quantidade, "agua"))
         pos += 1
         state = 0
         continue
 
       if (not isDetalhe(nextToken[1]) and not isTipoAgua(nextToken[1])):
-        pedido.append((quantidade, current[1]))
+        pedido.append((quantidade, "agua"))
         pos += 1
         state = 0
 
@@ -217,7 +291,6 @@ def montarPedido(tokens):
       state = 0
     
     elif (state == 9):  # Prato
-      pdb.set_trace()
 
       try:
         nextToken = pares[pos+1]
