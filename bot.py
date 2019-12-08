@@ -21,16 +21,6 @@ def etiquetador(dicionario, frase):
   return reconhecido
 
 if __name__ == "__main__":
-  entidades = {
-    "numInt": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
-    "numStr": ["um", "uma", "dois", "duas", "tres", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"],
-    "tam": ["g", "grande", "grandes", "m", "medio", "medios", "p", "pequeno", "pequenos"],
-    "prato": ["soba", "sobas"],
-    "tipo": ["bovino", "carne", "boi", "vaca", "frango", "galinha"],
-    "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete", "adicional"],
-    "bebidas": ["agua", "aguas", "água", "águas"]
-  }
-
   vectorizer = TfidfVectorizer(sublinear_tf=True,
     max_df=0.5, strip_accents="unicode")
   
@@ -75,24 +65,10 @@ if __name__ == "__main__":
         answer += " Omelete - R$3.00\n"
 
       elif (prediction == "pedido"):
-        ents = etiquetador(entidades, text)
+        ents = etiquetador(estruturas.entidades, text)
         print(ents)
 
-        answer = estruturas.montarPedido(ents)
-
-        # total = 0
-        # mult = 0
-
-        # for ent in ents:
-        #   par = ent.split(" ")
-
-        #   if (par[0] == "num"):
-        #     mult = estruturas.intToStr(par[1])
-
-        #   if (par[0] == "bebidas"):
-        #     total += mult * estruturas.bebidas
-
-        # answer = str(total)
+        answer = str(estruturas.montarPedido(ents))
               
       else:
         continue
