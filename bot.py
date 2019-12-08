@@ -66,13 +66,11 @@ if __name__ == "__main__":
 
       elif (prediction == "pedido"):
         ents = etiquetador(estruturas.entidades, text)
-        print(ents)
 
         answer = str(estruturas.montarPedido(ents))
               
       else:
         continue
-
       whats.answer(call, answer)
 
       time.sleep(0.75)

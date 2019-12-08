@@ -7,14 +7,15 @@ entidades = {
   "prato": ["soba", "sobas"],
   "tipo": ["bovino", "carne", "boi", "vaca", "frango", "galinha"],
   "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete", "adicional"],
-  "bebidas": ["agua", "aguas", "água", "águas", "coca", "coca-cola", "cocas", "fanta", "fantas", "suco", "uva", "pessego", "delvale", "del", "vale"],
+  "bebidas": ["agua", "aguas", "água", "águas", "coca", "coca-cola", "cocas", "fanta", "fantas", "suco", "sucos", "uva", "pessego", "pêssego"],
   "detalhe": ["com", "sem"],
   "tipoAgua": ["gas", "gaseificada", "normal", "natural"]
 }
 
 agua = ["agua", "aguas", "água", "águas"]
 refri = ["coca", "coca-cola", "cocas", "fanta", "fantas"]
-suco = ["suco", "uva", "pessego", "delvale", "del", "vale"]
+suco = ["suco", "sucos", "uva", "pessego", "pêssego"]
+saborSuco = ["uva", "pessego", "pêssego"]
 lata = refri + suco
 
 def strToInt(numStr):
@@ -29,6 +30,12 @@ def strToInt(numStr):
 
 def isCoca(coca):
   return coca == "coca" or coca == "cocas" or coca == "coca-cola"
+
+def isUva(suco):
+  return suco == "uva"
+
+def isPessego(suco):
+  return suco == "pessego" or suco == "pêssego"
 
 def isFanta(fanta):
   return fanta == "fanta" or fanta == "fantas"
@@ -79,8 +86,6 @@ def montarPedido(tokens):
 
   while (True):
     if (pos == len(pares)):
-      pdb.set_trace()
-      print("Cheguei no final")
       return pedido
     
     current = pares[pos]
@@ -194,10 +199,23 @@ def montarPedido(tokens):
         state = 0
     
     elif (state == 8): # Suco
-      pass
+      if (current[1] == "suco" or current[1] == "sucos"):
+        nextToken = pares[pos+1]
+
+        if (nextToken[1] in saborSuco):
+          pedido.append((quantidade, "suco " + nextToken[1]))
+          pos += 2
+          state = 0
+          continue
+
+        else: 
+          state = -1
+
+      pos += 1
+      state = 0
     
     elif (state == -1): 
       return naoEntendi()
 
-montarPedido(['numStr uma', 'bebidas fanta', 'bebidas lata'])
+#montarPedido(['numStr uma', 'bebidas suco', 'bebidas uva'])
 
