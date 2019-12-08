@@ -7,13 +7,15 @@ entidades = {
   "prato": ["soba", "sobas"],
   "tipo": ["bovino", "carne", "boi", "vaca", "frango", "galinha"],
   "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete", "adicional"],
-  "bebidas": ["agua", "aguas", "água", "águas", "coca", "fanta", "suco"],
+  "bebidas": ["agua", "aguas", "água", "águas", "coca", "coca-cola", "cocas", "fanta", "fantas", "suco", "uva", "pessego", "delvale", "del", "vale"],
   "detalhe": ["com", "sem"],
   "tipoAgua": ["gas", "gaseificada", "normal", "natural"]
 }
 
 agua = ["agua", "aguas", "água", "águas"]
-lata = ["coca", "fanta", "suco"]
+refri = ["coca", "coca-cola", "cocas", "fanta", "fantas"]
+suco = ["suco", "uva", "pessego", "delvale", "del", "vale"]
+lata = refri + suco
 
 def strToInt(numStr):
   if (numStr == "1" or numStr == "um" or numStr == "uma"):
@@ -24,6 +26,18 @@ def strToInt(numStr):
     return 3
   if (numStr == "4" or numStr == "quatro"):
     return 4
+
+def isCoca(coca):
+  return coca == "coca" or coca == "cocas" or coca == "coca-cola"
+
+def isRefri(ref):
+  return ref in refri
+
+def isSuco(suc):
+  return suc in suco
+
+def isLata(can):
+  return can in lata
 
 def isDetalhe(det):
   return det in entidades["detalhe"]
@@ -46,6 +60,7 @@ def naoEntendi():
 def montarPedido(tokens):
   state = 0
   quantidade = 1
+
   if (len(tokens) < 0):
     state = -1
 
@@ -81,6 +96,8 @@ def montarPedido(tokens):
     elif (state == 2): # Bebida
         if (isAgua(current[1])):
           state = 3
+        elif (isLata(current[1])):
+          state = 6
 
     elif (state == 3):  # Agua
       try:
@@ -139,8 +156,31 @@ def montarPedido(tokens):
           state = -1
           continue
 
+    elif (state == 6):  # Lata
+      if (isRefri(current[1])):
+        state = 7
+      elif (isSuco(current[1])):
+        state = 8
+
+    elif (state == 7): # Refri
+      if (isCoca(current[1])):
+        try:
+          nextToken = pares[pos+1]
+          if (nextToken[1] == "cola" or nextToken[1] == "colas"):
+            pos += 2
+          else:
+            pos += 1
+        except IndexError:
+          pos += 1
+        
+        pedido.append((quantidade, "coca"))
+        state = 0
+        
+    elif (state == 8): # Suco
+      pass
+    
     elif (state == -1): 
       return naoEntendi()
 
-montarPedido(['numStr uma', 'bebidas agua', 'detalhe com', 'tipoAgua gas', 'numInt 2', 'bebidas aguas'])
+montarPedido(['numStr uma', 'bebidas coca', 'bebidas cola'])
 
