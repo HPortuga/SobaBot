@@ -5,7 +5,7 @@ entidades = {
   "numStr": ["um", "uma", "dois", "duas", "tres", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"],
   "tam": ["g", "grande", "grandes", "m", "medio", "medios", "p", "pequeno", "pequenos"],
   "prato": ["soba", "sobas"],
-  "tipo": ["bovino", "carne", "boi", "vaca", "frango", "galinha"],
+  "tipo": ["bovino", "frango"],
   "adicional": ["gengibre", "shoyu", "shoyo", "cebolinha", "ovo", "omelete", "adicional"],
   "bebidas": ["agua", "aguas", "água", "águas", "coca", "coca-cola", "cocas", "fanta", "fantas", "suco", "sucos", "uva", "pessego", "pêssego"],
   "detalhe": ["com", "sem"],
@@ -64,26 +64,26 @@ def isBebida(bebida):
 def isAgua(bebida):
   return bebida in agua
 
+def isPrato(prato):
+  return prato in entidades["prato"]
+
 def naoEntendi():
   return "Nao entendi"
 
 def montarPedido(tokens):
+  pos = 0
   state = 0
   quantidade = 1
-
-  if (len(tokens) < 0):
-    state = -1
 
   pares = list()
   pedido = list()
   
+  if (len(tokens) < 0):
+    state = -1
+  
   for token in tokens:
     pares.append(tuple(token.split(" ")))
-
-  pos = 0
   
-  # pdb.set_trace()
-
   while (True):
     if (pos == len(pares)):
       return pedido
@@ -94,6 +94,8 @@ def montarPedido(tokens):
         state = 1
       elif (isBebida(current[1])):
         state = 2
+      elif (isPrato(current[1])):
+        state = 9
       else: 
         state = -1
 
@@ -102,7 +104,7 @@ def montarPedido(tokens):
       pos += 1
       state = 0
 
-    elif (state == 2): # Bebida
+    elif (state == 2):  # Bebida
         if (isAgua(current[1])):
           state = 3
         elif (isLata(current[1])):
@@ -171,7 +173,7 @@ def montarPedido(tokens):
       elif (isSuco(current[1])):
         state = 8
 
-    elif (state == 7): # Refri
+    elif (state == 7):  # Refri
       if (isCoca(current[1])):
         try:
           nextToken = pares[pos+1]
@@ -198,7 +200,7 @@ def montarPedido(tokens):
         pedido.append((quantidade, "fanta"))
         state = 0
     
-    elif (state == 8): # Suco
+    elif (state == 8):  # Suco
       if (current[1] == "suco" or current[1] == "sucos"):
         nextToken = pares[pos+1]
 
@@ -214,8 +216,45 @@ def montarPedido(tokens):
       pos += 1
       state = 0
     
+    elif (state == 9):  # Prato
+      pdb.set_trace()
+
+      try:
+        nextToken = pares[pos+1]
+        tam = ""
+        tipo = ""
+
+        if (nextToken[0] == "tam"):
+          tam = nextToken[1]
+          pos += 1
+
+          nextToken = pares[pos+1]
+
+          if (nextToken[0] == "tipo"):
+            tipo = nextToken[1]
+            pos += 2
+
+        elif (nextToken[0] == "tipo"):
+          tipo = nextToken[1]
+          pos += 1
+
+          nextToken = pares[pos+1]
+
+          if (nextToken[0] == "tam"):
+            tam = nextToken[1]
+            pos += 2
+
+        if (tam != "" or tipo != ""):
+          pedido.append((quantidade, "soba " + tam + " " + tipo))
+          state = 0
+        else:
+          state = -1
+
+      except IndexError:
+        state = -1
+
     elif (state == -1): 
       return naoEntendi()
 
-#montarPedido(['numStr uma', 'bebidas suco', 'bebidas uva'])
+# print(montarPedido(['numStr um', 'prato soba', 'tam m', 'tipo bovino']))
 
